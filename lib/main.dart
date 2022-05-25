@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:masterclass_app/screens/splash_screen.dart';
 
 void main() {
   runApp(const AppStart());
@@ -11,7 +12,9 @@ class AppStart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: <String, WidgetBuilder>{},
+      routes: <String, WidgetBuilder>{
+        '/': (context) => const SplashScreen(),
+      },
     );
   }
 }
