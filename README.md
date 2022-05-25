@@ -1,16 +1,25 @@
-# masterclass_app
+# Flutterando Masterclass App
 
-A new Flutter project.
+Project created to practice concepts learned following the [Flutterando Online Course](https://masterclass.flutterando.com.br).
 
-## Getting Started
+### Links
 
-This project is a starting point for a Flutter application.
+Youtube channel: [Link](https://www.youtube.com/c/Flutterando)
 
-A few resources to get you started if this is your first Flutter project:
+Linkedin: [Link](https://www.linkedin.com/company/theflutterando/)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Teacher: [Jacob Moura](https://www.linkedin.com/in/jacob-moura/)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Instalation
+
+Clone: `git clone https://github.com/renanspvargas/masterclass_app.git`
+
+Enter dir `cd masterclass_app`
+
+Install Packages `flutter pub get`
+
+## Generating builds
+
+If you want to build for another SO change your `flutter config`
+
+Then run `flutter create .`
