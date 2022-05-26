@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:masterclass_app/screens/home_screen.dart';
 import 'package:masterclass_app/screens/splash_screen.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class AppStart extends StatelessWidget {
     return MaterialApp(
       routes: <String, WidgetBuilder>{
         '/': (context) => const SplashScreen(),
+        '/home': (context) => const HomeScreen(),
       },
     );
   }
