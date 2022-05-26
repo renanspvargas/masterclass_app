@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:masterclass_app/Navigation/navigation_manager.dart';
 import 'package:masterclass_app/screens/home_screen.dart';
+import 'package:masterclass_app/screens/profile_screen.dart';
+import 'package:masterclass_app/screens/repos_screen.dart';
 import 'package:masterclass_app/screens/splash_screen.dart';
 
 void main() {
@@ -14,8 +17,10 @@ class AppStart extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: <String, WidgetBuilder>{
-        '/': (context) => const SplashScreen(),
-        '/home': (context) => const HomeScreen(),
+        NavigationManager.shared.root: (context) => const SplashScreen(),
+        NavigationManager.shared.home: (context) => const HomeScreen(),
+        NavigationManager.shared.repos: (context) => const ReposScreen(),
+        NavigationManager.shared.profile: (context) => const ProfileScreen(),
       },
     );
   }
