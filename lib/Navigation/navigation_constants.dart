@@ -1,5 +1,5 @@
-class NavigationManager {
-  static var shared = NavigationManager();
+class NavigationConstans {
+  static NavigationConstans shared = NavigationConstans();
 
   final _root = '/';
   final _home = '/home';
