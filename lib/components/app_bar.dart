@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -12,7 +13,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        color: Color(0xff121517),
+        color: const Color(0xff121517),
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Row(
@@ -35,7 +36,17 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ],
               ),
               const Expanded(child: SizedBox()),
-              FlutterLogo(size: 40)
+              GestureDetector(
+                child: SvgPicture.asset(
+                  "assets/svg/awesome_moon.svg",
+                  color: const Color(0xffEDF4F8),
+                  semanticsLabel: 'Toggle Theme',
+                ),
+                onTap: () {
+                  // ignore: avoid_print
+                  print("Toggle Theme Tapped");
+                },
+              )
             ],
           ),
         ),
