@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:masterclass_app/assets/assets_constants.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -19,7 +20,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           child: Row(
             children: [
               Image.asset(
-                "assets/images/masterclas_icon.png",
+                AssetsConstants.images.masterclassIcon,
                 width: 48,
                 height: 48,
               ),
@@ -38,7 +39,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               const Expanded(child: SizedBox()),
               GestureDetector(
                 child: SvgPicture.asset(
-                  "assets/svg/awesome_moon.svg",
+                  AssetsConstants.svgs.awesomeMoon,
                   color: const Color(0xffEDF4F8),
                   semanticsLabel: 'Toggle Theme',
                 ),

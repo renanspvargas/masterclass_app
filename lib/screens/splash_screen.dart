@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:masterclass_app/assets/assets_constants.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
       color: const Color(0xff121517),
       child: Center(
         child: Image.asset(
-          'assets/images/masterclass_logo.png',
+          AssetsConstants.images.masterclassLogo,
           height: 75,
           width: 287,
         ),
