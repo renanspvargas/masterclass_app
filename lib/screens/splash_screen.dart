@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
       color: const Color(0xff121517),
       child: Center(
         child: Image.asset(
-          'assets/masterclass_logo.png',
+          'assets/images/masterclass_logo.png',
           height: 75,
           width: 287,
         ),
