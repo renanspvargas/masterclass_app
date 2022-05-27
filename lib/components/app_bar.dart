@@ -42,8 +42,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   semanticsLabel: 'Toggle Theme',
                 ),
                 onTap: () {
-                  // ignore: avoid_print
-                  print("Toggle Theme Tapped");
+                  ThemeManager.shared.toggleTheme();
                 },
               )
             ],
