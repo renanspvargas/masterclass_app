@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:masterclass_app/imports.dart';
 
 class ReposScreen extends StatelessWidget {
   const ReposScreen({Key? key}) : super(key: key);

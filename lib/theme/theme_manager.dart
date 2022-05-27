@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:masterclass_app/imports.dart';
 
 class ThemeManager with ChangeNotifier {
   static ThemeManager shared = ThemeManager();

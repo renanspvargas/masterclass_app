@@ -1,6 +1,4 @@
-import 'fonts.dart';
-import 'images.dart';
-import 'svgs.dart';
+import 'package:masterclass_app/imports.dart';
 
 class AssetsConstants {
   static Images images = Images();

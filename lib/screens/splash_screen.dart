@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:masterclass_app/assets/assets_constants.dart';
+import 'package:masterclass_app/imports.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

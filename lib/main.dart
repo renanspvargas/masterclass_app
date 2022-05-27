@@ -1,11 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:masterclass_app/navigation/navigation_constants.dart';
-import 'package:masterclass_app/screens/home_screen.dart';
-import 'package:masterclass_app/screens/profile_screen.dart';
-import 'package:masterclass_app/screens/repos_screen.dart';
-import 'package:masterclass_app/screens/splash_screen.dart';
-import 'package:masterclass_app/theme/theme_constants.dart';
-import 'package:masterclass_app/theme/theme_manager.dart';
+import 'package:masterclass_app/imports.dart';
 
 void main() {
   runApp(const AppStart());
