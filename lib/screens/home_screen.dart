@@ -5,10 +5,21 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: CustomAppBar(title: "Atividades"),
-      body: Center(
-        child: Text("Home"),
+    return Scaffold(
+      appBar: const CustomAppBar(title: "Atividades"),
+      body: Padding(
+        padding: const EdgeInsets.all(14.0),
+        child: ListView.separated(
+          itemCount: 5,
+          separatorBuilder: (BuildContext context, int index) {
+            return const SizedBox(
+              height: 16,
+            );
+          },
+          itemBuilder: (BuildContext context, int index) {
+            return ActivityCard();
+          },
+        ),
       ),
     );
   }
