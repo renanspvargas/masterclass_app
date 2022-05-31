@@ -1,13 +1,13 @@
 class Activity {
   String title;
   String body;
-  int exercicios;
+  int exercicios = 0;
   String sourceLink;
 
-  Activity(
-    this.title,
-    this.body,
-    this.exercicios,
-    this.sourceLink,
-  );
+  Activity({
+    required this.title,
+    required this.body,
+    required this.exercicios,
+    required this.sourceLink,
+  });
 }

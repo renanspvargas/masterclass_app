@@ -2,8 +2,8 @@ class ExperienceOnTechnology {
   String technologyName;
   String experienceTime;
 
-  ExperienceOnTechnology(
-    this.technologyName,
-    this.experienceTime,
-  );
+  ExperienceOnTechnology({
+    required this.technologyName,
+    required this.experienceTime,
+  });
 }

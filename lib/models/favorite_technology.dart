@@ -4,8 +4,8 @@ class FavoriteTechnology {
   String name;
   Image image;
 
-  FavoriteTechnology(
-    this.name,
-    this.image,
-  );
+  FavoriteTechnology({
+    required this.name,
+    required this.image,
+  });
 }
