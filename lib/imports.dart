@@ -21,6 +21,7 @@ export 'package:masterclass_app/components/app_bar.dart';
 export 'package:masterclass_app/components/activity_card.dart';
 
 // Models
+export 'package:masterclass_app/models/favorite_technology.dart';
 export 'package:masterclass_app/models/activity.dart';
 
 // Packages
