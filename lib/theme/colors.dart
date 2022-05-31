@@ -5,3 +5,8 @@ const scaffoldBackgrondLight = Color(0xffD6DFE4);
 
 const textHighlightDark = Color(0xffEDF4F8);
 const textHighlightLight = Color(0xff172026);
+
+const bodyTextDark = Color(0xff51565A);
+const bodyTextLight = Color(0xff51565A);
+
+const primaryColor = Color(0xff055AA3);
