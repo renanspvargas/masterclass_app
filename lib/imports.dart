@@ -13,6 +13,8 @@ export 'package:masterclass_app/screens/splash_screen.dart';
 // Theme
 export 'package:masterclass_app/theme/theme_constants.dart';
 export 'package:masterclass_app/theme/theme_manager.dart';
+export 'package:masterclass_app/theme/colors.dart';
+export 'package:masterclass_app/theme/text.dart';
 
 // Components
 export 'package:masterclass_app/components/app_bar.dart';
