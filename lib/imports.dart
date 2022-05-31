@@ -23,6 +23,7 @@ export 'package:masterclass_app/components/activity_card.dart';
 // Models
 export 'package:masterclass_app/models/favorite_technology.dart';
 export 'package:masterclass_app/models/activity.dart';
+export 'package:masterclass_app/models/experience_on_technology.dart';
 
 // Packages
 export 'package:flutter_svg/flutter_svg.dart';
