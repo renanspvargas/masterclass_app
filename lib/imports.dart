@@ -18,6 +18,7 @@ export 'package:masterclass_app/theme/text.dart';
 
 // Components
 export 'package:masterclass_app/components/app_bar.dart';
+export 'package:masterclass_app/components/activity_card.dart';
 
 // Packages
 export 'package:flutter_svg/flutter_svg.dart';
