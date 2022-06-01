@@ -1,7 +1,9 @@
-import 'package:masterclass_app/imports.dart';
+import 'package:masterclass_app/assets/fonts.dart';
+import 'package:masterclass_app/assets/images.dart';
+import 'package:masterclass_app/assets/svgs.dart';
 
-class AssetsConstants {
-  static Images images = Images();
-  static Svgs svgs = Svgs();
-  static Fonts fonts = Fonts();
+abstract class AssetsConstants {
+  static final Images images = Images.instance;
+  static final Svgs svgs = Svgs.instance;
+  static final Fonts fonts = Fonts.instance;
 }
