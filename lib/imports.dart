@@ -17,13 +17,13 @@ export 'package:masterclass_app/theme/colors.dart';
 export 'package:masterclass_app/theme/text.dart';
 
 // Components
-export 'package:masterclass_app/components/app_bar.dart';
-export 'package:masterclass_app/components/activity_card.dart';
+export 'package:masterclass_app/components/app_bar_widget.dart';
+export 'package:masterclass_app/components/activity_card_widget.dart';
 
 // Models
-export 'package:masterclass_app/models/favorite_technology.dart';
-export 'package:masterclass_app/models/activity.dart';
-export 'package:masterclass_app/models/experience_on_technology.dart';
+export 'package:masterclass_app/models/favorite_technology_model.dart';
+export 'package:masterclass_app/models/activity_model.dart';
+export 'package:masterclass_app/models/experience_on_technology_model.dart';
 
 // Packages
 export 'package:flutter_svg/flutter_svg.dart';
