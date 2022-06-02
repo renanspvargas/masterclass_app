@@ -1,5 +1,7 @@
 class NavigationConstans {
-  static NavigationConstans shared = NavigationConstans();
+  NavigationConstans._internal();
+  static final NavigationConstans _instance = NavigationConstans._internal();
+  static NavigationConstans get shared => _instance;
 
   final _root = '/';
   final _home = '/home';
