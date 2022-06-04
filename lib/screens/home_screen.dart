@@ -1,7 +1,9 @@
 import 'package:masterclass_app/imports.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  HomeScreen({Key? key}) : super(key: key);
+
+  final List<Activity> _allActivities = ActivitiesData.allActivities();
 
   @override
   Widget build(BuildContext context) {
@@ -10,14 +12,14 @@ class HomeScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(14.0),
         child: ListView.separated(
-          itemCount: 5,
+          itemCount: _allActivities.length,
           separatorBuilder: (BuildContext context, int index) {
             return const SizedBox(
               height: 16,
             );
           },
           itemBuilder: (BuildContext context, int index) {
-            return const ActivityCard();
+            return ActivityCard(activity: _allActivities[index]);
           },
         ),
       ),
