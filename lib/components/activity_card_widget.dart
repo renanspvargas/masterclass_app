@@ -125,7 +125,8 @@ class DeepLinksRow extends StatelessWidget {
             child: Center(
               child: Text(
                 'Ver mais',
-                style: theme.textTheme.subtitle1,
+                style:
+                    theme.textTheme.subtitle1?.copyWith(color: buttonTextColor),
               ),
             ),
           ),
