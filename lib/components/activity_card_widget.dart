@@ -93,9 +93,18 @@ class BodyTextRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      activity.body,
-      style: theme.textTheme.bodyText1,
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        child: SizedBox(
+          width: MediaQuery.of(context).size.width,
+          child: Text(
+            activity.body,
+            style: theme.textTheme.bodyText1,
+            textAlign: TextAlign.start,
+          ),
+        ),
+      ),
     );
   }
 }
