@@ -8,7 +8,7 @@ class ActivityCard extends StatelessWidget {
     return SizedBox(
       height: 220,
       child: Container(
-        color: Colors.amber,
+        color: Theme.of(context).listTileTheme.tileColor,
       ),
     );
   }

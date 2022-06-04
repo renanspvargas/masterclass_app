@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
             );
           },
           itemBuilder: (BuildContext context, int index) {
-            return ActivityCard();
+            return const ActivityCard();
           },
         ),
       ),
