@@ -30,3 +30,6 @@ export 'package:flutter_svg/flutter_svg.dart';
 
 // Assets
 export 'package:masterclass_app/assets/assets_constants.dart';
+
+// Data
+export 'package:masterclass_app/data/activities_data.dart';
