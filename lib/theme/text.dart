@@ -37,11 +37,11 @@ TextStyle bodyText1 = TextStyle(
 
 /// Technology name
 TextStyle bodyText2 = TextStyle(
-  fontFamily: AssetsConstants.fonts.poppins,
+  fontFamily: AssetsConstants.fonts.montserrat,
   fontSize: 12,
   fontWeight: FontWeight.w500,
-  foreground: Paint()
-    ..style = PaintingStyle.stroke
-    ..strokeWidth = 1
-    ..color = Colors.white,
+  // foreground: Paint()
+  //   ..style = PaintingStyle.stroke
+  //   ..strokeWidth = 1
+  //   ..color = Colors.white,
 );
