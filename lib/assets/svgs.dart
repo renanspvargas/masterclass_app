@@ -22,4 +22,7 @@ class Svgs {
 
   final _materialToys = "assets/svg/material_toys.svg";
   String get materialToys => _materialToys;
+
+  final _awesomeBrain = "assets/svg/awesome_brain.svg";
+  String get awesomeBrain => _awesomeBrain;
 }
