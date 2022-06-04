@@ -16,3 +16,4 @@ const moonTogleDark = Color(0xffEDF4F8);
 const moonTogleLight = Color(0xff172026);
 
 const primaryColor = Color(0xff055AA3);
+const buttonTextColor = Color(0xffEDF4F8);
