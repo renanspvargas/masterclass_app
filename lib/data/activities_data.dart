@@ -4,9 +4,9 @@ class ActivitiesData {
   static List<Activity> allActivities() {
     return [
       Activity(
+        icon: AssetsConstants.svgs.awesomeRunning,
         title: "Animações",
-        body:
-            "Estudos sobre animações implícitas e controladas, contendo 4 exercícios e 2 estudos",
+        body: "Estudos sobre animações implícitas e controladas",
         exercicios: 4,
         sourceLink: "sourceLink",
       ),
