@@ -109,18 +109,25 @@ class DeepLinksRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SvgPicture.asset(
-          AssetsConstants.svgs.awesomeGithub,
-          color: theme.textTheme.headline1?.color,
-        ),
-        const SizedBox(width: 4),
-        Text(
-          'Acessar código fonte',
-          style: theme.textTheme.bodyText2,
+        GestureDetector(
+          onTap: () => print('Github link'),
+          child: Row(
+            children: [
+              SvgPicture.asset(
+                AssetsConstants.svgs.awesomeGithub,
+                color: theme.textTheme.headline1?.color,
+              ),
+              const SizedBox(width: 4),
+              Text(
+                'Acessar código fonte',
+                style: theme.textTheme.bodyText2,
+              ),
+            ],
+          ),
         ),
         const Expanded(child: SizedBox()),
         GestureDetector(
-          onTap: () => {},
+          onTap: () => print('navigate to activity'),
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
