@@ -9,4 +9,7 @@ const textHighlightLight = Color(0xff172026);
 const bodyTextDark = Color(0xff51565A);
 const bodyTextLight = Color(0xff51565A);
 
+const tileBackgroundDark = Color(0xff172026);
+const tileBackgroundLight = Color(0xffEDF4F8);
+
 const primaryColor = Color(0xff055AA3);
