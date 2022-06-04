@@ -4,9 +4,10 @@ class ActivitiesData {
   static List<Activity> allActivities() {
     return [
       Activity(
-        title: "title",
-        body: "body",
-        exercicios: 3,
+        title: "Animações",
+        body:
+            "Estudos sobre animações implícitas e controladas, contendo 4 exercícios e 2 estudos",
+        exercicios: 4,
         sourceLink: "sourceLink",
       ),
     ];
