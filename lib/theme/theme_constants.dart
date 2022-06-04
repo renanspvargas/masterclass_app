@@ -7,6 +7,7 @@ ThemeData lightTheme = ThemeData(
   appBarTheme: const AppBarTheme(
     backgroundColor: scaffoldBackgrondLight,
   ),
+  listTileTheme: const ListTileThemeData(tileColor: tileBackgroundLight),
   textTheme: TextTheme(
     headline1: headline1.copyWith(color: textHighlightLight),
     headline2: headline2.copyWith(color: textHighlightLight),
@@ -24,6 +25,7 @@ ThemeData darkTheme = ThemeData(
   appBarTheme: const AppBarTheme(
     backgroundColor: scaffoldBackgrondDark,
   ),
+  listTileTheme: const ListTileThemeData(tileColor: tileBackgroundDark),
   textTheme: TextTheme(
     headline1: headline1.copyWith(color: textHighlightDark),
     headline2: headline2.copyWith(color: textHighlightDark),
