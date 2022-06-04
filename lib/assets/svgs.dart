@@ -6,7 +6,20 @@ class Svgs {
 
   // Properties
   final _awesomeMoon = "assets/svg/awesome_moon.svg";
-
-  // Getters
   String get awesomeMoon => _awesomeMoon;
+
+  final _awesomeGithub = "assets/svg/awesome_github.svg";
+  String get awesomeGithub => _awesomeGithub;
+
+  final _awesomeGlasses = "assets/svg/awesome_glasses.svg";
+  String get awesomeGlasses => _awesomeGlasses;
+
+  final _awesomeRunning = "assets/svg/awesome_running.svg";
+  String get awesomeRunning => _awesomeRunning;
+
+  final _featherTarget = "assets/svg/feather_target.svg";
+  String get featherTarget => _featherTarget;
+
+  final _materialToys = "assets/svg/material_toys.svg";
+  String get materialToys => _materialToys;
 }
