@@ -55,7 +55,10 @@ class HeaderRow extends StatelessWidget {
               height: 43,
               width: 43,
             ),
-            const FlutterLogo(),
+            SvgPicture.asset(
+              activity.icon,
+              color: theme.scaffoldBackgroundColor,
+            ),
           ],
         ),
         const SizedBox(width: 12),
@@ -106,7 +109,10 @@ class DeepLinksRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const FlutterLogo(size: 20),
+        SvgPicture.asset(
+          AssetsConstants.svgs.awesomeGithub,
+          color: theme.textTheme.headline1?.color,
+        ),
         const SizedBox(width: 4),
         Text(
           'Acessar código fonte',
