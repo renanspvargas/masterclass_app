@@ -12,4 +12,7 @@ const bodyTextLight = Color(0xff51565A);
 const tileBackgroundDark = Color(0xff172026);
 const tileBackgroundLight = Color(0xffEDF4F8);
 
+const moonTogleDark = Color(0xffEDF4F8);
+const moonTogleLight = Color(0xff172026);
+
 const primaryColor = Color(0xff055AA3);

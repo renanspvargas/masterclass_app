@@ -40,7 +40,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             GestureDetector(
               child: SvgPicture.asset(
                 AssetsConstants.svgs.awesomeMoon,
-                color: const Color(0xffEDF4F8),
+                color: Theme.of(context).appBarTheme.actionsIconTheme?.color,
                 semanticsLabel: 'Toggle Theme',
               ),
               onTap: () {

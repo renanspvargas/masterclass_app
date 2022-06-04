@@ -5,8 +5,8 @@ ThemeData lightTheme = ThemeData(
   primaryColor: primaryColor,
   scaffoldBackgroundColor: scaffoldBackgrondLight,
   appBarTheme: const AppBarTheme(
-    backgroundColor: scaffoldBackgrondLight,
-  ),
+      backgroundColor: scaffoldBackgrondLight,
+      actionsIconTheme: IconThemeData(color: moonTogleLight)),
   listTileTheme: const ListTileThemeData(tileColor: tileBackgroundLight),
   textTheme: TextTheme(
     headline1: headline1.copyWith(color: textHighlightLight),
@@ -23,8 +23,8 @@ ThemeData darkTheme = ThemeData(
   primaryColor: primaryColor,
   scaffoldBackgroundColor: scaffoldBackgrondDark,
   appBarTheme: const AppBarTheme(
-    backgroundColor: scaffoldBackgrondDark,
-  ),
+      backgroundColor: scaffoldBackgrondDark,
+      actionsIconTheme: IconThemeData(color: moonTogleDark)),
   listTileTheme: const ListTileThemeData(tileColor: tileBackgroundDark),
   textTheme: TextTheme(
     headline1: headline1.copyWith(color: textHighlightDark),
