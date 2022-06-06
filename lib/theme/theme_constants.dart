@@ -16,6 +16,8 @@ ThemeData lightTheme = ThemeData(
     bodyText1: bodyText1.copyWith(color: bodyTextLight),
     bodyText2: bodyText2.copyWith(color: textHighlightLight),
   ),
+  bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor: scaffoldBackgrondDark),
 );
 
 ThemeData darkTheme = ThemeData(
@@ -34,4 +36,6 @@ ThemeData darkTheme = ThemeData(
     bodyText1: bodyText1.copyWith(color: bodyTextDark),
     bodyText2: bodyText2.copyWith(color: textHighlightDark),
   ),
+  bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor: scaffoldBackgrondDark),
 );
