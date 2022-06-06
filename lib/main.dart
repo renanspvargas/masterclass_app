@@ -37,12 +37,7 @@ class _AppStartState extends State<AppStart> {
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: ThemeManager.shared.themeMode,
-      routes: <String, WidgetBuilder>{
-        NavigationConstans.shared.root: (context) => const SplashScreen(),
-        NavigationConstans.shared.home: (context) => HomeScreen(),
-        NavigationConstans.shared.repos: (context) => const ReposScreen(),
-        NavigationConstans.shared.profile: (context) => const ProfileScreen(),
-      },
+      home: const SplashScreen(),
     );
   }
 }

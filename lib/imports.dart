@@ -2,7 +2,7 @@
 export 'package:flutter/material.dart';
 
 // Navigation
-export 'package:masterclass_app/navigation/navigation_constants.dart';
+export 'package:masterclass_app/navigation/custom_navigation_bar.dart';
 
 // Screens
 export 'package:masterclass_app/screens/home_screen.dart';
