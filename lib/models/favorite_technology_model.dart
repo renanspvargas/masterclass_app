@@ -2,7 +2,7 @@ import 'package:masterclass_app/imports.dart';
 
 class FavoriteTechnology {
   String name;
-  Image image;
+  String image;
 
   FavoriteTechnology({
     required this.name,
