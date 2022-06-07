@@ -2,7 +2,7 @@ import 'package:masterclass_app/imports.dart';
 
 class TechnologyCard extends StatefulWidget {
   const TechnologyCard({Key? key, required this.technology}) : super(key: key);
-  final FavoriteTechnology technology;
+  final FavoriteTechnologyModel technology;
 
   @override
   State<TechnologyCard> createState() => _TechnologyCardState();

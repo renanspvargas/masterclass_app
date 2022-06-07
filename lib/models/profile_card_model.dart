@@ -1,4 +1,4 @@
-class ProfileCard {
+class ProfileCardModel {
   final String image;
   final String name;
   final String description;
@@ -7,7 +7,7 @@ class ProfileCard {
   final String linkedinLink;
   final String instagramLink;
 
-  ProfileCard(
+  ProfileCardModel(
     this.image,
     this.name,
     this.description,

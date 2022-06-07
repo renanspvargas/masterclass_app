@@ -3,7 +3,7 @@ import 'package:masterclass_app/imports.dart';
 class ActivityCard extends StatelessWidget {
   const ActivityCard({Key? key, required this.activity}) : super(key: key);
 
-  final Activity activity;
+  final ActivityModel activity;
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class HeaderRow extends StatelessWidget {
   const HeaderRow({Key? key, required this.activity, required this.theme})
       : super(key: key);
 
-  final Activity activity;
+  final ActivityModel activity;
   final ThemeData theme;
 
   @override
@@ -88,7 +88,7 @@ class BodyTextRow extends StatelessWidget {
   const BodyTextRow({Key? key, required this.activity, required this.theme})
       : super(key: key);
 
-  final Activity activity;
+  final ActivityModel activity;
   final ThemeData theme;
 
   @override

@@ -85,7 +85,7 @@ class ProfileScreen extends StatelessWidget {
               Row(
                 children: [
                   TechnologyCard(
-                    technology: FavoriteTechnology(
+                    technology: FavoriteTechnologyModel(
                       image: AssetsConstants.svgs.featherTarget,
                       name: 'Flutter',
                     ),

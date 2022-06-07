@@ -1,8 +1,8 @@
-class FavoriteTechnology {
+class FavoriteTechnologyModel {
   final String name;
   final String image;
 
-  FavoriteTechnology({
+  FavoriteTechnologyModel({
     required this.name,
     required this.image,
   });

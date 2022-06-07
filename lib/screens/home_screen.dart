@@ -3,7 +3,7 @@ import 'package:masterclass_app/imports.dart';
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);
 
-  final List<Activity> _allActivities = ActivitiesData.allActivities();
+  final List<ActivityModel> _allActivities = ActivitiesData.allActivities();
 
   @override
   Widget build(BuildContext context) {

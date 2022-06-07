@@ -1,8 +1,8 @@
-class ExperienceOnTechnology {
+class ExperienceOnTechnologyModel {
   final String technologyName;
   final String experienceTime;
 
-  ExperienceOnTechnology({
+  ExperienceOnTechnologyModel({
     required this.technologyName,
     required this.experienceTime,
   });
