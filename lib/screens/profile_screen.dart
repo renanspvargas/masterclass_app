@@ -75,6 +75,22 @@ class ProfileScreen extends StatelessWidget {
                     )
                   ],
                 ),
+              ),
+              const SizedBox(height: 20),
+              Text(
+                'Tecnologias Favoritas',
+                style: Theme.of(context).textTheme.subtitle2,
+              ),
+              const SizedBox(height: 8),
+              Row(
+                children: [
+                  TechnologyCard(
+                    technology: FavoriteTechnology(
+                      image: AssetsConstants.svgs.featherTarget,
+                      name: 'Flutter',
+                    ),
+                  )
+                ],
               )
             ],
           ),
