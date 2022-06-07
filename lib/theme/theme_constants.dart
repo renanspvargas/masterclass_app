@@ -16,8 +16,14 @@ ThemeData lightTheme = ThemeData(
     bodyText1: bodyText1.copyWith(color: bodyTextLight),
     bodyText2: bodyText2.copyWith(color: textHighlightLight),
   ),
-  bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      backgroundColor: scaffoldBackgrondDark),
+  bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    backgroundColor: scaffoldBackgrondLight,
+    selectedIconTheme: const IconThemeData(size: 24, color: navBarITemLight),
+    selectedItemColor: navBarITemLight,
+    selectedLabelStyle: bodyText2,
+    unselectedLabelStyle: bodyText2,
+    elevation: 10,
+  ),
 );
 
 ThemeData darkTheme = ThemeData(
@@ -36,6 +42,11 @@ ThemeData darkTheme = ThemeData(
     bodyText1: bodyText1.copyWith(color: bodyTextDark),
     bodyText2: bodyText2.copyWith(color: textHighlightDark),
   ),
-  bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      backgroundColor: scaffoldBackgrondDark),
+  bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    backgroundColor: scaffoldBackgrondDark,
+    selectedIconTheme: const IconThemeData(size: 24, color: navBarITemDark),
+    selectedItemColor: navBarITemDark,
+    selectedLabelStyle: bodyText2,
+    unselectedLabelStyle: bodyText2,
+  ),
 );

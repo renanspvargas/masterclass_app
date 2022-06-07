@@ -35,7 +35,7 @@ TextStyle bodyText1 = TextStyle(
   fontWeight: FontWeight.w500,
 );
 
-/// Technology name
+/// Technology name; Bottom nav bar
 TextStyle bodyText2 = TextStyle(
   fontFamily: AssetsConstants.fonts.montserrat,
   fontSize: 12,

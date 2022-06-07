@@ -31,27 +31,55 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentPageIndex,
         onTap: _updateIndex,
-        backgroundColor:
-            Theme.of(context).bottomNavigationBarTheme.backgroundColor,
-        selectedItemColor: Theme.of(context).listTileTheme.tileColor,
-        iconSize: 30,
         items: [
           BottomNavigationBarItem(
             label: "Atividades",
             icon: SvgPicture.asset(
               AssetsConstants.svgs.featherTarget,
+              color: Theme.of(context)
+                  .bottomNavigationBarTheme
+                  .selectedIconTheme
+                  ?.color,
+              width: Theme.of(context)
+                  .bottomNavigationBarTheme
+                  .selectedIconTheme
+                  ?.size,
+              height: Theme.of(context)
+                  .bottomNavigationBarTheme
+                  .selectedIconTheme
+                  ?.size,
             ),
           ),
           BottomNavigationBarItem(
             label: "Repositórios",
             icon: SvgPicture.asset(
               AssetsConstants.svgs.awesomeGithub,
+              color: Theme.of(context)
+                  .bottomNavigationBarTheme
+                  .selectedIconTheme
+                  ?.color,
+              width: Theme.of(context)
+                  .bottomNavigationBarTheme
+                  .selectedIconTheme
+                  ?.size,
+              height: Theme.of(context)
+                  .bottomNavigationBarTheme
+                  .selectedIconTheme
+                  ?.size,
             ),
           ),
           BottomNavigationBarItem(
             label: "Sobre o dev",
-            icon: SvgPicture.asset(
-              AssetsConstants.svgs.awesomeProfile,
+            icon: Icon(
+              Icons.person,
+              color: Theme.of(context)
+                  .bottomNavigationBarTheme
+                  .selectedIconTheme
+                  ?.color,
+              size: Theme.of(context)
+                  .bottomNavigationBarTheme
+                  .selectedIconTheme
+                  ?.size,
             ),
           ),
         ],

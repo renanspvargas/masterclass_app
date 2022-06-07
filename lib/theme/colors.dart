@@ -9,6 +9,9 @@ const textHighlightLight = Color(0xff172026);
 const bodyTextDark = Color(0xff51565A);
 const bodyTextLight = Color(0xff51565A);
 
+const navBarITemDark = Color(0xffEDF4F8);
+const navBarITemLight = Color(0xff172026);
+
 const tileBackgroundDark = Color(0xff172026);
 const tileBackgroundLight = Color(0xffEDF4F8);
 
