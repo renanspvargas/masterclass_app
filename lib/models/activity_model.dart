@@ -1,9 +1,9 @@
 class Activity {
-  String icon;
-  String title;
-  String body;
-  int exercicios = 0;
-  String sourceLink;
+  final String icon;
+  final String title;
+  final String body;
+  final int exercicios;
+  final String sourceLink;
 
   Activity({
     required this.icon,

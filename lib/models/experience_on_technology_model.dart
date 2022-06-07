@@ -1,6 +1,6 @@
 class ExperienceOnTechnology {
-  String technologyName;
-  String experienceTime;
+  final String technologyName;
+  final String experienceTime;
 
   ExperienceOnTechnology({
     required this.technologyName,

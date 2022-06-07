@@ -1,6 +1,6 @@
 class FavoriteTechnology {
-  String name;
-  String image;
+  final String name;
+  final String image;
 
   FavoriteTechnology({
     required this.name,
