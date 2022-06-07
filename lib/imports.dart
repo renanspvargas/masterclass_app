@@ -25,6 +25,7 @@ export 'package:masterclass_app/components/technology_card.dart';
 export 'package:masterclass_app/models/favorite_technology_model.dart';
 export 'package:masterclass_app/models/activity_model.dart';
 export 'package:masterclass_app/models/experience_on_technology_model.dart';
+export 'package:masterclass_app/models/profile_card_model.dart';
 
 // Packages
 export 'package:flutter_svg/flutter_svg.dart';
