@@ -19,6 +19,7 @@ export 'package:masterclass_app/theme/text.dart';
 // Components
 export 'package:masterclass_app/components/app_bar_widget.dart';
 export 'package:masterclass_app/components/activity_card_widget.dart';
+export 'package:masterclass_app/components/technology_card.dart';
 
 // Models
 export 'package:masterclass_app/models/favorite_technology_model.dart';
