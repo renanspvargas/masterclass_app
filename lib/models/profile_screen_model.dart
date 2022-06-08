@@ -4,8 +4,8 @@ class ProfileScreenModel {
   final ProfileCardModel profileCard;
   final List<FavoriteTechnologyModel> favoriteTechnologies;
 
-  ProfileScreenModel(
-    this.profileCard,
-    this.favoriteTechnologies,
-  );
+  ProfileScreenModel({
+    required this.profileCard,
+    required this.favoriteTechnologies,
+  });
 }

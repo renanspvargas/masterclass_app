@@ -7,13 +7,13 @@ class ProfileCardModel {
   final String linkedinLink;
   final String instagramLink;
 
-  ProfileCardModel(
-    this.image,
-    this.name,
-    this.description,
-    this.telegramLink,
-    this.githubLink,
-    this.linkedinLink,
-    this.instagramLink,
-  );
+  ProfileCardModel({
+    required this.image,
+    required this.name,
+    required this.description,
+    required this.telegramLink,
+    required this.githubLink,
+    required this.linkedinLink,
+    required this.instagramLink,
+  });
 }
