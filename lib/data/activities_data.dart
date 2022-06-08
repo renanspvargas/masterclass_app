@@ -1,6 +1,6 @@
 import 'package:masterclass_app/imports.dart';
 
-class ActivitiesData {
+abstract class ActivitiesData {
   static List<ActivityModel> allActivities() {
     return [
       ActivityModel(
