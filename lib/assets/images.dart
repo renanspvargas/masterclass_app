@@ -11,7 +11,6 @@ class Images {
   final _masterclassLogo = 'assets/images/masterclass_logo.png';
   String get masterclassLogo => _masterclassLogo;
 
-  final _profilePicture = 'assets/images/profile_pic.png';
+  final _profilePicture = 'assets/images/profile_pic.jpg';
   String get profilePicture => _profilePicture;
-  // Getters
 }
