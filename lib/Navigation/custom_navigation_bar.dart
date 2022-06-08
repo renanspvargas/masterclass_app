@@ -20,7 +20,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   static final List<Widget> _screens = [
     HomeScreen(),
     const ReposScreen(),
-    const ProfileScreen(),
+    ProfileScreen(),
   ];
 
   @override
