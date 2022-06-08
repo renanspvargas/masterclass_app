@@ -28,4 +28,16 @@ class Svgs {
 
   final _awesomeProfile = "assets/svg/awesome_profile.svg";
   String get awesomeProfile => _awesomeProfile;
+
+  final _awesomeGithubAlt = "assets/svg/awesome_github_alt.svg";
+  String get awesomeGithubAlt => _awesomeGithubAlt;
+
+  final _awesomeInstagram = "assets/svg/awesome_instagram.svg";
+  String get awesomeInstagram => _awesomeInstagram;
+
+  final _awesomeLinkedinCircled = "assets/svg/awesome_linkedin_circled.svg";
+  String get awesomeLinkedinCircled => _awesomeLinkedinCircled;
+
+  final _awesomeTelegram = "assets/svg/awesome_telegram_app.svg";
+  String get awesomeTelegram => _awesomeTelegram;
 }
