@@ -17,23 +17,13 @@ class ProfileScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ProfileCardWidget(profileCard: profileData.profileCard),
-              const SizedBox(height: 20),
-              Text(
-                'Tecnologias Favoritas',
-                style: Theme.of(context).textTheme.subtitle2,
+              ProfileCardWidget(
+                profileCard: profileData.profileCard,
               ),
-              const SizedBox(height: 8),
-              Row(
-                children: [
-                  TechnologyCard(
-                    technology: FavoriteTechnologyModel(
-                      image: AssetsConstants.svgs.featherTarget,
-                      name: 'Flutter',
-                    ),
-                  )
-                ],
-              )
+              const SizedBox(height: 20),
+              FavoriteTechWidget(
+                favoriteTechs: profileData.favoriteTechnologies,
+              ),
             ],
           ),
         ),
@@ -121,6 +111,33 @@ class ProfileCardWidget extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+}
+
+class FavoriteTechWidget extends StatelessWidget {
+  final List<FavoriteTechnologyModel> favoriteTechs;
+  const FavoriteTechWidget({
+    Key? key,
+    required this.favoriteTechs,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          'Tecnologias Favoritas',
+          style: Theme.of(context).textTheme.subtitle2,
+        ),
+        const SizedBox(height: 8),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: favoriteTechs
+              .map((item) => TechnologyCard(technology: item))
+              .toList(),
+        )
+      ],
     );
   }
 }
