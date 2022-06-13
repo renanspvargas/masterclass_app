@@ -35,9 +35,9 @@ class Svgs {
   final _awesomeInstagram = "assets/svg/awesome_instagram.svg";
   String get awesomeInstagram => _awesomeInstagram;
 
-  final _awesomeLinkedinCircled = "assets/svg/awesome_linkedin_circled.svg";
-  String get awesomeLinkedinCircled => _awesomeLinkedinCircled;
+  final _awesomeLinkedin = "assets/svg/awesome_linkedin.svg";
+  String get awesomeLinkedin => _awesomeLinkedin;
 
-  final _awesomeTelegram = "assets/svg/awesome_telegram_app.svg";
+  final _awesomeTelegram = "assets/svg/awesome_telegram.svg";
   String get awesomeTelegram => _awesomeTelegram;
 }
