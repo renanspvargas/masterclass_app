@@ -25,15 +25,11 @@ class _TechnologyCardState extends State<TechnologyCard> {
             widget.technology.image,
             height: 45,
             width: 45,
+            color: Theme.of(context).textTheme.headline1?.color,
           ),
           Text(
             widget.technology.name,
-            style: Theme.of(context).textTheme.bodyText2?.copyWith(
-                  foreground: Paint()
-                    ..style = PaintingStyle.stroke
-                    ..strokeWidth = 1
-                    ..color = Colors.white,
-                ),
+            style: Theme.of(context).textTheme.bodyText2,
           )
         ],
       ),
