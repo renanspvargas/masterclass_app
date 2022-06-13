@@ -56,8 +56,8 @@ class ProfileCardWidget extends StatelessWidget {
         color: Theme.of(context).listTileTheme.tileColor,
         borderRadius: BorderRadius.circular(20),
       ),
+      height: 300,
       width: MediaQuery.of(context).size.width * 0.9,
-      height: MediaQuery.of(context).size.width,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -90,28 +90,32 @@ class ProfileCardWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                color: Colors.indigo,
-                width: 20,
-                height: 20,
+              SvgPicture.asset(
+                AssetsConstants.svgs.awesomeTelegram,
+                width: 25,
+                height: 25,
+                color: Theme.of(context).textTheme.headline1?.color,
               ),
               const SizedBox(width: 27),
-              Container(
-                color: Colors.indigo,
+              SvgPicture.asset(
+                AssetsConstants.svgs.awesomeGithubAlt,
                 width: 20,
                 height: 20,
+                color: Theme.of(context).textTheme.headline1?.color,
               ),
               const SizedBox(width: 27),
-              Container(
-                color: Colors.indigo,
+              SvgPicture.asset(
+                AssetsConstants.svgs.awesomeInstagram,
                 width: 20,
                 height: 20,
+                color: Theme.of(context).textTheme.headline1?.color,
               ),
               const SizedBox(width: 27),
-              Container(
-                color: Colors.indigo,
+              SvgPicture.asset(
+                AssetsConstants.svgs.awesomeLinkedin,
                 width: 20,
                 height: 20,
+                color: Theme.of(context).textTheme.headline1?.color,
               ),
             ],
           )
