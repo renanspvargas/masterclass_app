@@ -40,4 +40,13 @@ class Svgs {
 
   final _awesomeTelegram = "assets/svg/awesome_telegram.svg";
   String get awesomeTelegram => _awesomeTelegram;
+
+  final _techFlutter = "assets/svg/tech_flutter.svg";
+  String get techFlutter => _techFlutter;
+
+  final _techPython = "assets/svg/tech_python.svg";
+  String get techPython => _techPython;
+
+  final _techSwift = "assets/svg/tech_swift.svg";
+  String get techSwift => _techSwift;
 }
