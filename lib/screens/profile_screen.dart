@@ -9,24 +9,28 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const CustomAppBar(title: 'Sobre o dev'),
-      body: SizedBox(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        child: Padding(
-          padding: const EdgeInsets.all(15),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              ProfileCardWidget(
-                profileCard: profileData.profileCard,
+      body: Column(
+        children: [
+          Expanded(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.all(15),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    ProfileCardWidget(
+                      profileCard: profileData.profileCard,
+                    ),
+                    const SizedBox(height: 20),
+                    FavoriteTechWidget(
+                      favoriteTechs: profileData.favoriteTechnologies,
+                    ),
+                  ],
+                ),
               ),
-              const SizedBox(height: 20),
-              FavoriteTechWidget(
-                favoriteTechs: profileData.favoriteTechnologies,
-              ),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
