@@ -37,6 +37,7 @@ class _AppStartState extends State<AppStart> {
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: ThemeManager.shared.themeMode,
+      routes: NavigationRoutes.instance.allRoutes,
       home: const SplashScreen(),
     );
   }
