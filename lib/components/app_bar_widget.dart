@@ -2,8 +2,13 @@ import 'package:masterclass_app/imports.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
+  final bool backButtonActive;
 
-  const CustomAppBar({Key? key, required this.title}) : super(key: key);
+  const CustomAppBar({
+    Key? key,
+    required this.title,
+    this.backButtonActive = false,
+  }) : super(key: key);
 
   @override
   Size get preferredSize => const Size.fromHeight(85);
@@ -16,6 +21,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         padding: const EdgeInsets.all(15.0),
         child: Row(
           children: [
+            if (backButtonActive)
+              GestureDetector(
+                onTap: Navigator.of(context).pop,
+                child: const Icon(
+                  Icons.arrow_back_ios,
+                ),
+              ),
             Image.asset(
               AssetsConstants.images.masterclassIcon,
               width: 48,
