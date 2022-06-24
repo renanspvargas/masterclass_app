@@ -37,10 +37,13 @@ export 'package:masterclass_app/assets/assets_constants.dart';
 
 // Data
 export 'package:masterclass_app/data/activities_data.dart';
+export 'package:masterclass_app/data/activities/activities_screen_data.dart';
 export 'package:masterclass_app/data/favorite_technologies_data.dart';
 export 'package:masterclass_app/data/profile_card_data.dart';
 export 'package:masterclass_app/data/profile_screen_data.dart';
 
 // Flutterando Activities
+export 'package:masterclass_app/screens/activities/activities_path.dart';
+export 'package:masterclass_app/screens/activities/activities_list_screen.dart';
 export 'package:masterclass_app/models/activities/activities_list_screen_model.dart';
 export 'package:masterclass_app/models/activities/activity_page_model.dart';
