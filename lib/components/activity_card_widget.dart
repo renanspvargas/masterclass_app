@@ -25,7 +25,7 @@ class ActivityCard extends StatelessWidget {
           children: [
             HeaderRow(activity: activity, theme: theme),
             BodyTextRow(activity: activity, theme: theme),
-            DeepLinksRow(theme: theme)
+            DeepLinksRow(activity: activity, theme: theme)
           ],
         ),
       ),
@@ -109,10 +109,31 @@ class BodyTextRow extends StatelessWidget {
   }
 }
 
-class DeepLinksRow extends StatelessWidget {
-  const DeepLinksRow({Key? key, required this.theme}) : super(key: key);
+class DeepLinksRow extends StatefulWidget {
+  const DeepLinksRow({
+    Key? key,
+    required this.activity,
+    required this.theme,
+  }) : super(key: key);
 
+  final ActivityModel activity;
   final ThemeData theme;
+
+  @override
+  State<DeepLinksRow> createState() => _DeepLinksRowState();
+}
+
+class _DeepLinksRowState extends State<DeepLinksRow> {
+  Future navigate() async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => ActivitiesListScreen(
+          info: widget.activity.activitiesList,
+        ),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -124,19 +145,19 @@ class DeepLinksRow extends StatelessWidget {
             children: [
               SvgPicture.asset(
                 AssetsConstants.svgs.awesomeGithub,
-                color: theme.textTheme.headline1?.color,
+                color: widget.theme.textTheme.headline1?.color,
               ),
               const SizedBox(width: 4),
               Text(
                 'Acessar código fonte',
-                style: theme.textTheme.bodyText2,
+                style: widget.theme.textTheme.bodyText2,
               ),
             ],
           ),
         ),
         const Expanded(child: SizedBox()),
         GestureDetector(
-          onTap: () => print('navigate to activity'),
+          onTap: navigate,
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
@@ -147,8 +168,8 @@ class DeepLinksRow extends StatelessWidget {
             child: Center(
               child: Text(
                 'Ver mais',
-                style:
-                    theme.textTheme.subtitle1?.copyWith(color: buttonTextColor),
+                style: widget.theme.textTheme.subtitle1
+                    ?.copyWith(color: buttonTextColor),
               ),
             ),
           ),
