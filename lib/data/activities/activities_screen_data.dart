@@ -8,7 +8,20 @@ abstract class ActivitiesScreenData {
 
   static final ActivitiesListScreenModel animations = ActivitiesListScreenModel(
     title: "Animações",
-    activities: [],
+    activities: [
+      ActivityPageModel(
+        title: "Botão - Animação Implicita",
+        navigator: NavigationRoutes.instance.implicitButtonAnimation,
+      ),
+      ActivityPageModel(
+        title: "Lista - Animação Implicita",
+        navigator: NavigationRoutes.instance.implicitListAnimation,
+      ),
+      ActivityPageModel(
+        title: "Botão - Animação Controlada",
+        navigator: NavigationRoutes.instance.controlledButtonAnimation,
+      )
+    ],
   );
 
   static final ActivitiesListScreenModel mockup = ActivitiesListScreenModel(
