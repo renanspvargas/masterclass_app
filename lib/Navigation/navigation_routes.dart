@@ -7,13 +7,23 @@ class NavigationRoutes {
 
   static const _mockupMoneyApp = '/mockup/money';
   static const _mockupTinderApp = '/mockup/tinder';
+  static const _implicitButtonAnimation = '/animation/exercicio1';
+  static const _implicitListAnimation = '/animation/exercicio2';
+  static const _controlledButtonAnimation = '/animation/exercicio3';
 
   static final _allRoutes = <String, WidgetBuilder>{
     _mockupMoneyApp: (context) => const MoneyApp(),
     _mockupTinderApp: (context) => const TinderApp(),
+    _implicitButtonAnimation: (context) => const AnimatedButtonScreen(),
+    _implicitListAnimation: (context) => const AnimatedExpansionTile(),
+    _controlledButtonAnimation: (context) =>
+        const ControlledAnimationButtonScreen(),
   };
 
   Map<String, WidgetBuilder> get allRoutes => _allRoutes;
   String get mockupMoneyApp => _mockupMoneyApp;
   String get mockupTinderApp => _mockupTinderApp;
+  String get implicitButtonAnimation => _implicitButtonAnimation;
+  String get implicitListAnimation => _implicitListAnimation;
+  String get controlledButtonAnimation => _controlledButtonAnimation;
 }
