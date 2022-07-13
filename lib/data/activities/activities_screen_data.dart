@@ -3,7 +3,12 @@ import 'package:masterclass_app/imports.dart';
 abstract class ActivitiesScreenData {
   static final ActivitiesListScreenModel logic = ActivitiesListScreenModel(
     title: "Lógica",
-    activities: [],
+    activities: [
+      ActivityPageModel(
+        title: "Validador de CPF",
+        navigator: NavigationRoutes.instance.cpfValidator,
+      ),
+    ],
   );
 
   static final ActivitiesListScreenModel animations = ActivitiesListScreenModel(
