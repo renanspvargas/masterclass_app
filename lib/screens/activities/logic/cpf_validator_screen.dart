@@ -1,14 +1,14 @@
 import 'package:flutter/services.dart';
 import 'package:masterclass_app/imports.dart';
 
-class CpfValidator extends StatefulWidget {
-  CpfValidator({Key? key}) : super(key: key);
+class CpfValidatorScreen extends StatefulWidget {
+  const CpfValidatorScreen({Key? key}) : super(key: key);
 
   @override
-  State<CpfValidator> createState() => _CpfValidatorState();
+  State<CpfValidatorScreen> createState() => _CpfValidatorScreenState();
 }
 
-class _CpfValidatorState extends State<CpfValidator> {
+class _CpfValidatorScreenState extends State<CpfValidatorScreen> {
   late final TextEditingController _controller = TextEditingController();
 
   @override

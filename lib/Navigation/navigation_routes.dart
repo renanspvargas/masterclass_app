@@ -19,7 +19,7 @@ class NavigationRoutes {
     _implicitListAnimation: (context) => const AnimatedExpansionTile(),
     _controlledButtonAnimation: (context) =>
         const ControlledAnimationButtonScreen(),
-    _cpfValidator: (context) => CpfValidator(),
+    _cpfValidator: (context) => const CpfValidatorScreen(),
   };
 
   Map<String, WidgetBuilder> get allRoutes => _allRoutes;
