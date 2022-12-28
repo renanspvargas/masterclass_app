@@ -35,7 +35,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
           BottomNavigationBarItem(
             label: "Atividades",
             icon: SvgPicture.asset(
-              AssetsConstants.svgs.featherTarget,
+              AppSvgs.featherTarget,
               color: Theme.of(context)
                   .bottomNavigationBarTheme
                   .selectedIconTheme
@@ -53,7 +53,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
           BottomNavigationBarItem(
             label: "Repositórios",
             icon: SvgPicture.asset(
-              AssetsConstants.svgs.awesomeGithub,
+              AppSvgs.awesomeGithub,
               color: Theme.of(context)
                   .bottomNavigationBarTheme
                   .selectedIconTheme

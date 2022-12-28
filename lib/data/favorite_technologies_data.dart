@@ -4,15 +4,15 @@ abstract class FavoriteTechnologiesData {
   static List<FavoriteTechnologyModel> allTechnologies() {
     return [
       FavoriteTechnologyModel(
-        image: AssetsConstants.svgs.techFlutter,
+        image: AppSvgs.techFlutter,
         name: "Flutter",
       ),
       FavoriteTechnologyModel(
-        image: AssetsConstants.svgs.techPython,
+        image: AppSvgs.techPython,
         name: "Python",
       ),
       FavoriteTechnologyModel(
-        image: AssetsConstants.svgs.techSwift,
+        image: AppSvgs.techSwift,
         name: "Swift",
       ),
     ];

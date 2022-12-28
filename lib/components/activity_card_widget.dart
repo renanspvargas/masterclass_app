@@ -76,7 +76,7 @@ class HeaderRow extends StatelessWidget {
         Text(
           activity.exercicios.toString(),
           style: theme.textTheme.bodyText2?.copyWith(
-            fontFamily: AssetsConstants.fonts.poppins,
+            fontFamily: AppFonts.poppins,
           ),
         ),
       ],
@@ -144,7 +144,7 @@ class _DeepLinksRowState extends State<DeepLinksRow> {
           child: Row(
             children: [
               SvgPicture.asset(
-                AssetsConstants.svgs.awesomeGithub,
+                AppSvgs.awesomeGithub,
                 color: widget.theme.textTheme.headline1?.color,
               ),
               const SizedBox(width: 4),

@@ -4,7 +4,7 @@ abstract class ActivitiesData {
   static final List<ActivityModel> allActivities = [
     // Logic
     ActivityModel(
-      icon: AssetsConstants.svgs.awesomeBrain,
+      icon: AppSvgs.awesomeBrain,
       title: _logic.title,
       body: "Algoritmo para validação de CPF",
       exercicios: _logic.activities.length,
@@ -14,7 +14,7 @@ abstract class ActivitiesData {
 
     // Animations
     ActivityModel(
-      icon: AssetsConstants.svgs.awesomeRunning,
+      icon: AppSvgs.awesomeRunning,
       title: _animation.title,
       body: "Estudos sobre animações implícitas e controladas",
       exercicios: _animation.activities.length,
@@ -24,7 +24,7 @@ abstract class ActivitiesData {
 
     // Mockup
     ActivityModel(
-      icon: AssetsConstants.svgs.awesomeGlasses,
+      icon: AppSvgs.awesomeGlasses,
       title: _mockup.title,
       body: "Aplicação da técnica de leitura de mockup, contendo 2 exercícios",
       exercicios: _mockup.activities.length,
@@ -35,7 +35,7 @@ abstract class ActivitiesData {
 
     // Playground
     ActivityModel(
-      icon: AssetsConstants.svgs.materialToys,
+      icon: AppSvgs.materialToys,
       title: _playground.title,
       body: "Ambiente destinado a testes e estudos em geral",
       exercicios: _playground.activities.length,

@@ -3,7 +3,7 @@ import 'package:masterclass_app/imports.dart';
 abstract class ProfileCardData {
   static ProfileCardModel data() {
     return ProfileCardModel(
-      image: AssetsConstants.images.profilePicture,
+      image: AppImages.profilePicture,
       name: "Renan S. P. Vargas",
       description:
           "I'm a iOS developer working with Swift since jan/2021. In 2020 I worked a year as Data Engineer specialized on AWS",

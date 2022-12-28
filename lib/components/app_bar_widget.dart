@@ -29,7 +29,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ),
               ),
             Image.asset(
-              AssetsConstants.images.masterclassIcon,
+              AppImages.masterclassIcon,
               width: 48,
               height: 48,
             ),
@@ -51,7 +51,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             const Expanded(child: SizedBox()),
             GestureDetector(
               child: SvgPicture.asset(
-                AssetsConstants.svgs.awesomeMoon,
+                AppSvgs.awesomeMoon,
                 color: Theme.of(context).appBarTheme.actionsIconTheme?.color,
                 semanticsLabel: 'Toggle Theme',
               ),
