@@ -1,4 +1,3 @@
-import 'package:flutter/services.dart';
 import 'package:masterclass_app/imports.dart';
 
 class CpfValidatorScreen extends StatefulWidget {
@@ -10,11 +9,27 @@ class CpfValidatorScreen extends StatefulWidget {
 
 class _CpfValidatorScreenState extends State<CpfValidatorScreen> {
   late final TextEditingController _controller = TextEditingController();
+  final _viewModel = CpfValidatorViewModel();
 
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
+  Widget get _cpfValidationResult {
+    switch (_viewModel.cpfValidationStatus) {
+      case CPFValidationStatus.initialState:
+        return const Text('');
+      case CPFValidationStatus.insuficientNumbers:
+        return const Text('Digite todos os 11 numeros!');
+      case CPFValidationStatus.invalidChars:
+        return const Text('Digite apenas numeros!');
+      case CPFValidationStatus.invalidCPF:
+        return const Text(
+          'Seu CPF está inválido!',
+          style: TextStyle(color: Colors.red),
+        );
+      case CPFValidationStatus.validCPF:
+        return const Text(
+          'Seu CPF é válido!',
+          style: TextStyle(color: Colors.greenAccent),
+        );
+    }
   }
 
   @override
@@ -31,21 +46,33 @@ class _CpfValidatorScreenState extends State<CpfValidatorScreen> {
               const SizedBox(height: 50),
               TextField(
                 controller: _controller,
-                inputFormatters: [
-                  FilteringTextInputFormatter.allow(
-                    RegExp(r'([0-9]{3})\.([0-9]{3})\.([0-9]{3})-([0-9]{2})'),
-                  ),
-                ],
+                keyboardType: TextInputType.number,
+                maxLength: 11,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Digite seu CPF',
+                  helperText: 'Apenas números',
                 ),
               ),
               const SizedBox(height: 20),
               TextButton.icon(
-                onPressed: () => print(_controller.text),
+                onPressed: () => _viewModel.validateCPF(_controller.text),
                 icon: const Icon(Icons.check),
                 label: const Text("Clique para verificar"),
+              ),
+              const SizedBox(height: 40),
+              const Text('Resultado:'),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                height: 50,
+                width: 200,
+                child: Center(
+                  child: _cpfValidationResult,
+                ),
               )
             ],
           ),
