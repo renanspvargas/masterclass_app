@@ -12,7 +12,7 @@ class _CpfValidatorScreenState extends State<CpfValidatorScreen> {
   final _viewModel = CpfValidatorViewModel();
 
   Widget get _cpfValidationResult {
-    switch (_viewModel.cpfValidationStatus) {
+    switch (_viewModel.cpfValidationStatus.value) {
       case CPFValidationStatus.initialState:
         return const Text('');
       case CPFValidationStatus.insuficientNumbers:
@@ -71,7 +71,10 @@ class _CpfValidatorScreenState extends State<CpfValidatorScreen> {
                 height: 50,
                 width: 200,
                 child: Center(
-                  child: _cpfValidationResult,
+                  child: AnimatedBuilder(
+                    animation: _viewModel.cpfValidationStatus,
+                    builder: (context, child) => _cpfValidationResult,
+                  ),
                 ),
               )
             ],

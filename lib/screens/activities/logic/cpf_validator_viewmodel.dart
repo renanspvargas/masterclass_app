@@ -1,17 +1,20 @@
-class CpfValidatorViewModel {
-  CPFValidationStatus _cpfValidationStatus = CPFValidationStatus.initialState;
+import 'package:masterclass_app/imports.dart';
 
-  CPFValidationStatus get cpfValidationStatus => _cpfValidationStatus;
+class CpfValidatorViewModel {
+  final _cpfValidationStatus$ = ValueNotifier(CPFValidationStatus.initialState);
+
+  ValueNotifier<CPFValidationStatus> get cpfValidationStatus =>
+      _cpfValidationStatus$;
 
   void validateCPF(String cpf) {
     if (!_onlyHasNumbers(cpf)) {
-      _cpfValidationStatus = CPFValidationStatus.invalidChars;
+      _cpfValidationStatus$.value = CPFValidationStatus.invalidChars;
     } else if (!_hasCorrectLength(cpf)) {
-      _cpfValidationStatus = CPFValidationStatus.insuficientNumbers;
+      _cpfValidationStatus$.value = CPFValidationStatus.insuficientNumbers;
     } else if (!_validate10Number() && !_validate11Number()) {
-      _cpfValidationStatus = CPFValidationStatus.invalidCPF;
+      _cpfValidationStatus$.value = CPFValidationStatus.invalidCPF;
     } else {
-      _cpfValidationStatus = CPFValidationStatus.validCPF;
+      _cpfValidationStatus$.value = CPFValidationStatus.validCPF;
     }
   }
 
