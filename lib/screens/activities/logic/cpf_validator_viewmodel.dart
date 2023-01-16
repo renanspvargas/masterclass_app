@@ -11,7 +11,8 @@ class CpfValidatorViewModel {
       _cpfValidationStatus$.value = CPFValidationStatus.invalidChars;
     } else if (!_hasCorrectLength(cpf)) {
       _cpfValidationStatus$.value = CPFValidationStatus.insuficientNumbers;
-    } else if (!_validate10Number() && !_validate11Number()) {
+    } else if (!_validateCpfNumbers(cpf, NumberToValidate.number10) ||
+        !_validateCpfNumbers(cpf, NumberToValidate.number11)) {
       _cpfValidationStatus$.value = CPFValidationStatus.invalidCPF;
     } else {
       _cpfValidationStatus$.value = CPFValidationStatus.validCPF;
@@ -32,12 +33,33 @@ class CpfValidatorViewModel {
     return false;
   }
 
-  bool _validate10Number() {
-    return true;
-  }
+  bool _validateCpfNumbers(String data, NumberToValidate numberToValidate) {
+    int currentIndex = 0;
+    int currentSum = 0;
+    int decCounterRange = 0;
 
-  bool _validate11Number() {
-    return true;
+    switch (numberToValidate) {
+      case NumberToValidate.number10:
+        decCounterRange = 10;
+        break;
+      case NumberToValidate.number11:
+        decCounterRange = 11;
+        break;
+    }
+
+    for (int decCounter = decCounterRange; decCounter >= 2; decCounter--) {
+      int cpfnumber = int.parse(data[currentIndex]);
+      currentSum = currentSum + (cpfnumber * decCounter);
+      currentIndex = currentIndex + 1;
+    }
+
+    int result = currentSum * 10;
+    result = result % 11;
+
+    if (result == 10) result = 0;
+
+    if (result == int.parse(data[decCounterRange - 1])) return true;
+    return false;
   }
 }
 
@@ -48,3 +70,5 @@ enum CPFValidationStatus {
   invalidChars,
   invalidCPF
 }
+
+enum NumberToValidate { number10, number11 }
