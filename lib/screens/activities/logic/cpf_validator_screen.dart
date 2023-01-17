@@ -9,10 +9,10 @@ class CpfValidatorScreen extends StatefulWidget {
 
 class _CpfValidatorScreenState extends State<CpfValidatorScreen> {
   late final TextEditingController _controller = TextEditingController();
-  final _viewModel = CpfValidatorViewModel();
+  final _cpfValitadorStore = CpfValidatorStore();
 
   Widget get _cpfValidationResult {
-    switch (_viewModel.cpfValidationStatus.value) {
+    switch (_cpfValitadorStore.cpfValidationStatus.value) {
       case CPFValidationStatus.initialState:
         return const Text('');
       case CPFValidationStatus.insuficientNumbers:
@@ -56,7 +56,8 @@ class _CpfValidatorScreenState extends State<CpfValidatorScreen> {
               ),
               const SizedBox(height: 20),
               TextButton.icon(
-                onPressed: () => _viewModel.validateCPF(_controller.text),
+                onPressed: () =>
+                    _cpfValitadorStore.validateCPF(_controller.text),
                 icon: const Icon(Icons.check),
                 label: const Text("Clique para verificar"),
               ),
@@ -72,7 +73,7 @@ class _CpfValidatorScreenState extends State<CpfValidatorScreen> {
                 width: 200,
                 child: Center(
                   child: AnimatedBuilder(
-                    animation: _viewModel.cpfValidationStatus,
+                    animation: _cpfValitadorStore.cpfValidationStatus,
                     builder: (context, child) => _cpfValidationResult,
                   ),
                 ),

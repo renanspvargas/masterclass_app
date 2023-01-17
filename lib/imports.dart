@@ -30,7 +30,7 @@ export 'package:masterclass_app/models/profile_card_model.dart';
 export 'package:masterclass_app/models/profile_screen_model.dart';
 
 // View Models
-export 'package:masterclass_app/screens/activities/logic/cpf_validator_viewmodel.dart';
+export 'package:masterclass_app/screens/activities/logic/cpf_validator_store.dart';
 
 // Packages
 export 'package:flutter_svg/flutter_svg.dart';

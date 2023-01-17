@@ -1,6 +1,6 @@
 import 'package:masterclass_app/imports.dart';
 
-class CpfValidatorViewModel {
+class CpfValidatorStore {
   final _cpfValidationStatus$ = ValueNotifier(CPFValidationStatus.initialState);
 
   ValueNotifier<CPFValidationStatus> get cpfValidationStatus =>
