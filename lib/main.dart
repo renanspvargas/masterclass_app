@@ -1,3 +1,5 @@
+import 'package:masterclass_app/Navigation/app_router.dart';
+import 'package:masterclass_app/Navigation/app_routes.dart';
 import 'package:masterclass_app/imports.dart';
 
 void main() {
@@ -30,15 +32,14 @@ class _AppStartState extends State<AppStart> {
     }
   }
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: ThemeManager.shared.themeMode,
-      routes: NavigationRoutes.instance.allRoutes,
-      home: const SplashScreen(),
+      onGenerateRoute: AppRouter.onGeneratedRoute,
+      initialRoute: AppRoutes.splashScreen,
     );
   }
 }
