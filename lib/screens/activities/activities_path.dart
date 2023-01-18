@@ -9,3 +9,6 @@ export 'package:masterclass_app/screens/activities/animation/exercicio3.dart';
 
 // CPF Validator
 export 'package:masterclass_app/screens/activities/logic/cpf_validator_screen.dart';
+
+// Design Pattern
+export 'package:masterclass_app/screens/activities/design_pattern/desing_pattern_common_screen.dart';
