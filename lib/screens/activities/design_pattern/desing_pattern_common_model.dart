@@ -1,5 +1,5 @@
 class DesignPatternCommonModel {
-  final int id;
+  final String id;
   final String name;
 
   DesignPatternCommonModel({
