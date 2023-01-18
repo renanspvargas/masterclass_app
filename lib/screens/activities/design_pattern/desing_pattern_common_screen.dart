@@ -25,3 +25,5 @@ class DesingPatternCommonScreen extends StatelessWidget {
     );
   }
 }
+
+enum DesingPatternScreenActivity { service, repository }
