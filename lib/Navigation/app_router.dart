@@ -6,12 +6,9 @@ class AppRouter {
     switch (routeSettings.name) {
       case AppRoutes.splashScreen:
         return MaterialPageRoute(builder: ((context) => const SplashScreen()));
-      case AppRoutes.homeScreen:
-        return MaterialPageRoute(builder: ((context) => HomeScreen()));
-      case AppRoutes.repoScreen:
-        return MaterialPageRoute(builder: ((context) => const ReposScreen()));
-      case AppRoutes.profileScreen:
-        return MaterialPageRoute(builder: ((context) => ProfileScreen()));
+
+      case AppRoutes.mainBottomNavBar:
+        return MaterialPageRoute(builder: ((context) => MainBottomNavBar()));
 
       case AppRoutes.mockupMoneyApp:
         return MaterialPageRoute(builder: ((context) => const MoneyApp()));

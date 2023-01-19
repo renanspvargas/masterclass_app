@@ -1,8 +1,7 @@
 class AppRoutes {
   static const splashScreen = "/splashScreen";
-  static const homeScreen = "/homeScreen";
-  static const repoScreen = "/repoScreen";
-  static const profileScreen = "/profileScreen";
+
+  static const mainBottomNavBar = '/mainBottomNavBar';
 
   static const mockupMoneyApp = '/mockup/money';
   static const mockupTinderApp = '/mockup/tinder';
