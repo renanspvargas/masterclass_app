@@ -27,7 +27,7 @@ class AppRouter {
 
       case AppRoutes.cpfValidator:
         return MaterialPageRoute(
-            builder: ((context) => const AnimatedExpansionTile()));
+            builder: ((context) => const CpfValidatorScreen()));
 
       case AppRoutes.designPattern:
         DesingPatternScreenActivity activity =
