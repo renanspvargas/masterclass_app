@@ -1,3 +1,4 @@
+import 'package:masterclass_app/Navigation/app_routes.dart';
 import 'package:masterclass_app/imports.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -16,11 +17,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
   _navigateToHome() async {
     await Future.delayed(const Duration(seconds: 2), () {
-      Navigator.push(
+      Navigator.pushReplacementNamed(
         context,
-        MaterialPageRoute(
-          builder: (context) => const CustomBottomNavigationBar(),
-        ),
+        AppRoutes.mainBottomNavBar,
       );
     });
   }

@@ -1,3 +1,4 @@
+import 'package:masterclass_app/Navigation/app_routes.dart';
 import 'package:masterclass_app/imports.dart';
 
 abstract class ActivitiesScreenData {
@@ -6,7 +7,7 @@ abstract class ActivitiesScreenData {
     activities: [
       ActivityPageModel(
         title: "Validador de CPF",
-        navigator: NavigationRoutes.instance.cpfValidator,
+        navigator: AppRoutes.cpfValidator,
       ),
     ],
   );
@@ -16,15 +17,15 @@ abstract class ActivitiesScreenData {
     activities: [
       ActivityPageModel(
         title: "Botão - Animação Implicita",
-        navigator: NavigationRoutes.instance.implicitButtonAnimation,
+        navigator: AppRoutes.implicitButtonAnimation,
       ),
       ActivityPageModel(
         title: "Lista - Animação Implicita",
-        navigator: NavigationRoutes.instance.implicitListAnimation,
+        navigator: AppRoutes.implicitListAnimation,
       ),
       ActivityPageModel(
         title: "Botão - Animação Controlada",
-        navigator: NavigationRoutes.instance.controlledButtonAnimation,
+        navigator: AppRoutes.controlledButtonAnimation,
       )
     ],
   );
@@ -34,11 +35,11 @@ abstract class ActivitiesScreenData {
     activities: [
       ActivityPageModel(
         title: "Money App",
-        navigator: NavigationRoutes.instance.mockupMoneyApp,
+        navigator: AppRoutes.mockupMoneyApp,
       ),
       ActivityPageModel(
         title: "Tinder",
-        navigator: NavigationRoutes.instance.mockupTinderApp,
+        navigator: AppRoutes.mockupTinderApp,
       )
     ],
   );

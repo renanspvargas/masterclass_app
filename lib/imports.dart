@@ -3,7 +3,6 @@ export 'package:flutter/material.dart';
 
 // Navigation
 export 'package:masterclass_app/screens/main_bottom_nav_bar.dart';
-export 'package:masterclass_app/navigation/navigation_routes.dart';
 
 // Screens
 export 'package:masterclass_app/screens/home_screen.dart';
