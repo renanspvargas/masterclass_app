@@ -1,23 +1,19 @@
 import 'package:masterclass_app/imports.dart';
 
-class CustomBottomNavigationBar extends StatefulWidget {
-  const CustomBottomNavigationBar({Key? key}) : super(key: key);
+class MainBottomNavBar extends StatefulWidget {
+  int currentPageIndex;
+
+  MainBottomNavBar({
+    Key? key,
+    this.currentPageIndex = 0,
+  }) : super(key: key);
 
   @override
-  State<CustomBottomNavigationBar> createState() =>
-      _CustomBottomNavigationBarState();
+  State<MainBottomNavBar> createState() => _MainBottomNavBarState();
 }
 
-class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
-  int _currentPageIndex = 0;
-
-  void _updateIndex(int value) {
-    setState(() {
-      _currentPageIndex = value;
-    });
-  }
-
-  static final List<Widget> _screens = [
+class _MainBottomNavBarState extends State<MainBottomNavBar> {
+  final List<Widget> _screens = [
     HomeScreen(),
     const ReposScreen(),
     ProfileScreen(),
@@ -26,11 +22,15 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _screens.elementAt(_currentPageIndex),
+      body: _screens.elementAt(widget.currentPageIndex),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        currentIndex: _currentPageIndex,
-        onTap: _updateIndex,
+        currentIndex: widget.currentPageIndex,
+        onTap: (index) {
+          setState(() {
+            widget.currentPageIndex = index;
+          });
+        },
         items: [
           BottomNavigationBarItem(
             label: "Atividades",
