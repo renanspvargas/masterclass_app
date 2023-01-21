@@ -1,6 +1,9 @@
 // Flutter
 export 'package:flutter/material.dart';
 
+// Dart
+export 'dart:convert';
+
 // Navigation
 export 'package:masterclass_app/navigation/app_router.dart';
 export 'package:masterclass_app/navigation/app_routes.dart';
