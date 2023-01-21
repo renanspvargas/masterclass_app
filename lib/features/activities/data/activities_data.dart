@@ -1,6 +1,6 @@
 import 'package:masterclass_app/imports.dart';
 
-abstract class ActivitiesData {
+class ActivitiesData {
   static final List<ActivityModel> allActivities = [
     // Logic
     ActivityModel(

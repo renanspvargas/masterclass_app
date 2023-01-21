@@ -1,6 +1,6 @@
 import 'package:masterclass_app/imports.dart';
 
-abstract class ActivitiesScreenData {
+class ActivitiesScreenData {
   static final ActivitiesListScreenModel logic = ActivitiesListScreenModel(
     title: "Lógica",
     activities: [
