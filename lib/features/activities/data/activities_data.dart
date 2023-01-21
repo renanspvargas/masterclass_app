@@ -2,6 +2,15 @@ import 'package:masterclass_app/imports.dart';
 
 class ActivitiesData {
   static final List<ActivityModel> allActivities = [
+    ActivityModel(
+      icon: AppSvgs.designPattern,
+      title: _designPattern.title,
+      body: "Service e Repository design patterns",
+      exercicios: _designPattern.activities.length,
+      sourceLink: "",
+      activitiesList: _designPattern,
+    ),
+
     // Logic
     ActivityModel(
       icon: AppSvgs.awesomeBrain,
@@ -45,6 +54,7 @@ class ActivitiesData {
   ];
 
   //Atividades
+  static final _designPattern = ActivitiesScreenData.designPattern;
   static final _logic = ActivitiesScreenData.logic;
   static final _animation = ActivitiesScreenData.animations;
   static final _mockup = ActivitiesScreenData.mockup;

@@ -1,6 +1,21 @@
 import 'package:masterclass_app/imports.dart';
 
 class ActivitiesScreenData {
+  static final ActivitiesListScreenModel designPattern =
+      ActivitiesListScreenModel(
+    title: "Design Pattern",
+    activities: [
+      ActivityPageModel(
+        title: "Service",
+        navigator: AppRoutes.servicePattern,
+      ),
+      ActivityPageModel(
+        title: "Repository",
+        navigator: AppRoutes.repositoryPattern,
+      ),
+    ],
+  );
+
   static final ActivitiesListScreenModel logic = ActivitiesListScreenModel(
     title: "Lógica",
     activities: [
