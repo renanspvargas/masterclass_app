@@ -22,7 +22,7 @@ class AppRouter {
             builder: ((context) => const AnimatedExpansionTile()));
       case AppRoutes.controlledButtonAnimation:
         return MaterialPageRoute(
-            builder: ((context) => const AnimatedExpansionTile()));
+            builder: ((context) => const ControlledAnimationButtonScreen()));
 
       case AppRoutes.cpfValidator:
         return MaterialPageRoute(
