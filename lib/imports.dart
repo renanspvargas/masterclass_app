@@ -2,52 +2,28 @@
 export 'package:flutter/material.dart';
 
 // Navigation
-export 'package:masterclass_app/screens/main_bottom_nav_bar.dart';
-
-// Screens
-export 'package:masterclass_app/screens/home_screen.dart';
-export 'package:masterclass_app/screens/profile_screen.dart';
-export 'package:masterclass_app/screens/repos_screen.dart';
-export 'package:masterclass_app/screens/splash_screen.dart';
+export 'package:masterclass_app/navigation/app_router.dart';
+export 'package:masterclass_app/navigation/app_routes.dart';
 
 // Theme
-export 'package:masterclass_app/theme/theme_constants.dart';
-export 'package:masterclass_app/theme/theme_manager.dart';
-export 'package:masterclass_app/theme/colors.dart';
-export 'package:masterclass_app/theme/text.dart';
+export 'package:masterclass_app/utils/theme/theme_constants.dart';
+export 'package:masterclass_app/utils/theme/theme_manager.dart';
+export 'package:masterclass_app/utils/theme/colors.dart';
+export 'package:masterclass_app/utils/theme/text.dart';
 
 // Components
-export 'package:masterclass_app/components/app_bar_widget.dart';
-export 'package:masterclass_app/components/activity_card_widget.dart';
-export 'package:masterclass_app/components/technology_card.dart';
+export 'package:masterclass_app/utils/components/app_bar_widget.dart';
+export 'package:masterclass_app/utils/components/activity_card_widget.dart';
+export 'package:masterclass_app/utils/components/technology_card.dart';
 
-// Models
-export 'package:masterclass_app/models/favorite_technology_model.dart';
-export 'package:masterclass_app/models/activity_model.dart';
-export 'package:masterclass_app/models/experience_on_technology_model.dart';
-export 'package:masterclass_app/models/profile_card_model.dart';
-export 'package:masterclass_app/models/profile_screen_model.dart';
-
-// View Models
-export 'package:masterclass_app/screens/activities/logic/cpf_validator_store.dart';
+// Features
+export 'package:masterclass_app/features/main/imports.dart';
+export 'package:masterclass_app/features/activities/imports.dart';
 
 // Packages
 export 'package:flutter_svg/flutter_svg.dart';
 
 // Assets
-export 'package:masterclass_app/assets/fonts.dart';
-export 'package:masterclass_app/assets/images.dart';
-export 'package:masterclass_app/assets/svgs.dart';
-
-// Data
-export 'package:masterclass_app/data/activities_data.dart';
-export 'package:masterclass_app/data/activities/activities_screen_data.dart';
-export 'package:masterclass_app/data/favorite_technologies_data.dart';
-export 'package:masterclass_app/data/profile_card_data.dart';
-export 'package:masterclass_app/data/profile_screen_data.dart';
-
-// Flutterando Activities
-export 'package:masterclass_app/screens/activities/activities_path.dart';
-export 'package:masterclass_app/screens/activities/activities_list_screen.dart';
-export 'package:masterclass_app/models/activities/activities_list_screen_model.dart';
-export 'package:masterclass_app/models/activities/activity_page_model.dart';
+export 'package:masterclass_app/utils/assets/fonts.dart';
+export 'package:masterclass_app/utils/assets/images.dart';
+export 'package:masterclass_app/utils/assets/svgs.dart';

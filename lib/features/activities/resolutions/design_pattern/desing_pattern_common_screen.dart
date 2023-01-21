@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:masterclass_app/screens/activities/design_pattern/desing_pattern_common_model.dart';
+import 'package:masterclass_app/imports.dart';
 
 class DesingPatternCommonScreen extends StatelessWidget {
   final DesingPatternScreenActivity activity;

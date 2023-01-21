@@ -1,5 +1,4 @@
 import 'package:masterclass_app/imports.dart';
-import 'package:masterclass_app/Navigation/app_routes.dart';
 
 class AppRouter {
   static Route<dynamic>? onGeneratedRoute(RouteSettings routeSettings) {

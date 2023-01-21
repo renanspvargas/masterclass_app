@@ -1,4 +1,3 @@
-import 'package:masterclass_app/Navigation/app_routes.dart';
 import 'package:masterclass_app/imports.dart';
 
 abstract class ActivitiesScreenData {
