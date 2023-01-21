@@ -58,6 +58,8 @@ class HeaderRow extends StatelessWidget {
             SvgPicture.asset(
               activity.icon,
               color: theme.scaffoldBackgroundColor,
+              height: 43,
+              width: 43,
             ),
           ],
         ),
