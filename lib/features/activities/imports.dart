@@ -28,6 +28,7 @@ export 'package:masterclass_app/features/activities/resolutions/design_pattern/d
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/desing_pattern_common_model.dart';
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/services/products_service.dart';
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/stores/products_store.dart';
+export 'package:masterclass_app/features/activities/resolutions/design_pattern/stores/users_store.dart';
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/repositories/users_local_datasource.dart';
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/repositories/users_remote_datasource.dart';
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/repositories/users_repository.dart';
