@@ -30,6 +30,7 @@ export 'package:masterclass_app/features/activities/resolutions/design_pattern/s
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/stores/products_store.dart';
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/repositories/users_local_datasource.dart';
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/repositories/users_remote_datasource.dart';
+export 'package:masterclass_app/features/activities/resolutions/design_pattern/repositories/users_repository.dart';
 
 // Data
 export 'package:masterclass_app/features/activities/data/activities_data.dart';
