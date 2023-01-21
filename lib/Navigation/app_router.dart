@@ -28,12 +28,16 @@ class AppRouter {
         return MaterialPageRoute(
             builder: ((context) => const CpfValidatorScreen()));
 
-      case AppRoutes.designPattern:
-        DesingPatternScreenActivity activity =
-            routeSettings.arguments as DesingPatternScreenActivity;
+      case AppRoutes.servicePattern:
         return MaterialPageRoute(
           builder: ((context) => DesingPatternCommonScreen(
-                activity: activity,
+                activity: DesingPatternScreenActivity.service,
+              )),
+        );
+      case AppRoutes.repositoryPattern:
+        return MaterialPageRoute(
+          builder: ((context) => DesingPatternCommonScreen(
+                activity: DesingPatternScreenActivity.repository,
               )),
         );
       default:

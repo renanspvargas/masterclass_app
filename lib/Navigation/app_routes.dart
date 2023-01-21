@@ -12,5 +12,6 @@ class AppRoutes {
 
   static const cpfValidator = '/logic/cpf_validator_screen';
 
-  static const designPattern = '/designPattern/designPattern';
+  static const servicePattern = '/designPattern/servicePattern';
+  static const repositoryPattern = '/designPattern/repositoryPattern';
 }
