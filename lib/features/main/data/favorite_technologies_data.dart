@@ -1,6 +1,6 @@
 import 'package:masterclass_app/imports.dart';
 
-abstract class FavoriteTechnologiesData {
+class FavoriteTechnologiesData {
   static List<FavoriteTechnologyModel> allTechnologies() {
     return [
       FavoriteTechnologyModel(

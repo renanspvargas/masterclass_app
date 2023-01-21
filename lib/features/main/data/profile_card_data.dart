@@ -1,6 +1,6 @@
 import 'package:masterclass_app/imports.dart';
 
-abstract class ProfileCardData {
+class ProfileCardData {
   static ProfileCardModel data() {
     return ProfileCardModel(
       image: AppImages.profilePicture,
