@@ -1,26 +1,53 @@
 import 'package:masterclass_app/imports.dart';
 
-class DesingPatternCommonScreen extends StatelessWidget {
+class DesingPatternCommonScreen extends StatefulWidget {
   final DesingPatternScreenActivity activity;
-  final List<DesignPatternCommonModel> result = [
-    DesignPatternCommonModel(id: "1", name: "Teste1"),
-    DesignPatternCommonModel(id: "2", name: "Teste2"),
-    DesignPatternCommonModel(id: "3", name: "Teste3"),
-  ];
 
   DesingPatternCommonScreen({required this.activity, super.key});
+
+  @override
+  State<DesingPatternCommonScreen> createState() =>
+      _DesingPatternCommonScreenState();
+}
+
+class _DesingPatternCommonScreenState extends State<DesingPatternCommonScreen> {
+  final _usersStore = UsersStore();
+  final _productsStore = ProductsStore();
+
+  get _currentPattern {
+    switch (widget.activity) {
+      case DesingPatternScreenActivity.service:
+        return _productsStore;
+      case DesingPatternScreenActivity.repository:
+        return _usersStore;
+    }
+  }
+
+  @override
+  void initState() {
+    _usersStore.getUsers();
+    _productsStore.getProducts();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: ListView.builder(
-          itemCount: result.length,
-          itemBuilder: (_, index) {
-            return ListTile(
-              title: Text(result[index].name),
-              subtitle: Text(result[index].id),
-            );
+      body: AnimatedBuilder(
+          animation: _currentPattern,
+          builder: (_, __) {
+            return ListView.builder(
+                itemCount: _currentPattern.state.length,
+                itemBuilder: (_, index) {
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ListTile(
+                      title: Text(_currentPattern.state[index].name),
+                      subtitle: Text(_currentPattern.state[index].id),
+                    ),
+                  );
+                });
           }),
     );
   }
