@@ -27,6 +27,7 @@ export 'package:masterclass_app/features/activities/resolutions/logic/cpf_valida
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/desing_pattern_common_screen.dart';
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/desing_pattern_common_model.dart';
 export 'package:masterclass_app/features/activities/resolutions/design_pattern/services/products_service.dart';
+export 'package:masterclass_app/features/activities/resolutions/design_pattern/stores/products_store.dart';
 
 // Data
 export 'package:masterclass_app/features/activities/data/activities_data.dart';
