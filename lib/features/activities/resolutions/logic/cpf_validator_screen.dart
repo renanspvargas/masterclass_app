@@ -12,11 +12,11 @@ class _CpfValidatorScreenState extends State<CpfValidatorScreen> {
   final _cpfValitadorStore = CpfValidatorStore();
 
   Widget get _cpfValidationResult {
-    switch (_cpfValitadorStore.cpfValidationStatus.value) {
+    switch (_cpfValitadorStore.state) {
       case CPFValidationStatus.initialState:
         return const Text('');
       case CPFValidationStatus.insuficientNumbers:
-        return const Text('Digite todos os 11 numeros!');
+        return const Text('Digios 11 numeros!');
       case CPFValidationStatus.invalidChars:
         return const Text('Digite apenas numeros!');
       case CPFValidationStatus.invalidCPF:
@@ -73,7 +73,7 @@ class _CpfValidatorScreenState extends State<CpfValidatorScreen> {
                 width: 200,
                 child: Center(
                   child: AnimatedBuilder(
-                    animation: _cpfValitadorStore.cpfValidationStatus,
+                    animation: _cpfValitadorStore,
                     builder: (context, child) => _cpfValidationResult,
                   ),
                 ),

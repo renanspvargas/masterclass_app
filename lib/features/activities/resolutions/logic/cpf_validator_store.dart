@@ -1,22 +1,22 @@
 import 'package:masterclass_app/imports.dart';
 
-class CpfValidatorStore {
-  final _cpfValidationStatus$ = ValueNotifier(CPFValidationStatus.initialState);
-
-  ValueNotifier<CPFValidationStatus> get cpfValidationStatus =>
-      _cpfValidationStatus$;
+class CpfValidatorStore extends ChangeNotifier {
+  var state = CPFValidationStatus.initialState;
 
   void validateCPF(String cpf) {
     if (!_onlyHasNumbers(cpf)) {
-      _cpfValidationStatus$.value = CPFValidationStatus.invalidChars;
+      state = CPFValidationStatus.invalidChars;
     } else if (!_hasCorrectLength(cpf)) {
-      _cpfValidationStatus$.value = CPFValidationStatus.insuficientNumbers;
+      state = CPFValidationStatus.insuficientNumbers;
+    } else if (!_hasValidNumberSequence(cpf)) {
+      state = CPFValidationStatus.invalidCPF;
     } else if (!_validateCpfNumbers(cpf, NumberToValidate.number10) ||
         !_validateCpfNumbers(cpf, NumberToValidate.number11)) {
-      _cpfValidationStatus$.value = CPFValidationStatus.invalidCPF;
+      state = CPFValidationStatus.invalidCPF;
     } else {
-      _cpfValidationStatus$.value = CPFValidationStatus.validCPF;
+      state = CPFValidationStatus.validCPF;
     }
+    notifyListeners();
   }
 
   bool _onlyHasNumbers(String data) {
@@ -31,6 +31,12 @@ class CpfValidatorStore {
   bool _hasCorrectLength(String data) {
     if (data.length == 11) return true;
     return false;
+  }
+
+  bool _hasValidNumberSequence(String data) {
+    if (data == "00000000000") return false;
+
+    return true;
   }
 
   bool _validateCpfNumbers(String data, NumberToValidate numberToValidate) {
