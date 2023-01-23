@@ -8,7 +8,7 @@ class AnimeNewsRemoteDataSource {
 
   final String _path = 'https://www.intoxianime.com/?rest_route=/wp/v2/posts';
 
-  Future<List> getNews(int page, int perPage) async {
+  Future<List> getNews({required int page, required int perPage}) async {
     final completePath = '$_path&page=$page&per_page=$perPage';
     final response = await _client.get(Uri.parse(completePath));
     final json = jsonDecode(response.body) as List;
