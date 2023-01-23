@@ -15,4 +15,5 @@ class AppSvgs {
   static const techPython = "assets/svg/tech_python.svg";
   static const techSwift = "assets/svg/tech_swift.svg";
   static const designPattern = "assets/svg/design_pattern.svg";
+  static const bloc = "assets/svg/bloc.svg";
 }
