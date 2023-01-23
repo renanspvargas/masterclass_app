@@ -1,3 +1,5 @@
+import 'package:masterclass_app/features/activities/resolutions/bloc_anime_news/bloc/anime_news_bloc.dart';
+import 'package:masterclass_app/features/activities/resolutions/bloc_anime_news/screens/anime_news_screen.dart';
 import 'package:masterclass_app/imports.dart';
 
 class AppRouter {
@@ -40,6 +42,12 @@ class AppRouter {
                 activity: DesingPatternScreenActivity.repository,
               )),
         );
+
+      case AppRoutes.blocAnimeNews:
+        return MaterialPageRoute(
+          builder: ((context) => const AnimeNewsScreen()),
+        );
+
       default:
         return _errorRoute();
     }

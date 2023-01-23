@@ -14,4 +14,6 @@ class AppRoutes {
 
   static const servicePattern = '/designPattern/servicePattern';
   static const repositoryPattern = '/designPattern/repositoryPattern';
+
+  static const blocAnimeNews = '/bloc/animeNews';
 }
