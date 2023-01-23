@@ -9,7 +9,7 @@ class AnimeNewsRepository {
 
   Future<List<AnimeNewsModel>> getNews({
     required int page,
-    int perPage = 10,
+    required int perPage,
   }) async {
     final json = await _remoteDataSource.getNews(page: page, perPage: perPage);
     final List<AnimeNewsModel> news =

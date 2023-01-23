@@ -15,11 +15,14 @@ class AnimeNewsBloc extends Bloc<AnimeNewsEvent, AnimeNewsState> {
     on<GetAnimeNewsEvent>(_getAnimeNewsEvent);
   }
 
-  Future<void> _getAnimeNewsEvent(event, emit) async {
+  Future<void> _getAnimeNewsEvent(GetAnimeNewsEvent event, emit) async {
     emit(AnimeNewsLoadingState());
 
     try {
-      final news = await _repo.getNews(page: _currentPage);
+      final news = await _repo.getNews(
+        page: _currentPage,
+        perPage: event.perPage,
+      );
       emit(AnimeNewsLoadedState(news));
     } on AnimeNewsOffilineException catch (e) {
       emit(AnimeNewsErrorState(e.message));
