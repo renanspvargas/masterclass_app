@@ -6,3 +6,7 @@ class AnimeNewsException implements Exception {
 class AnimeNewsOffilineException extends AnimeNewsException {
   AnimeNewsOffilineException(super.message);
 }
+
+class AnimeNewsBadRequestException extends AnimeNewsException {
+  AnimeNewsBadRequestException(super.message);
+}
