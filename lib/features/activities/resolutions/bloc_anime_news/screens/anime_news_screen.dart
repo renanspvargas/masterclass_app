@@ -26,8 +26,17 @@ class _AnimeNewsScreenState extends State<AnimeNewsScreen> {
   void handleScrolling() {
     if (_scrollController.offset >=
         _scrollController.position.maxScrollExtent) {
+      _showLoadingMoreSnackBar();
       _bloc.add(GetMoreAnimeNewsEvent());
     }
+  }
+
+  void _showLoadingMoreSnackBar() {
+    const snackBar = SnackBar(
+      content: Text('Carregando mais itens...'),
+      duration: Duration(seconds: 1),
+    );
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
   @override
