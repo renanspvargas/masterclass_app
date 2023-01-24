@@ -1,9 +1,5 @@
 abstract class AnimeNewsEvent {}
 
-class GetAnimeNewsEvent extends AnimeNewsEvent {
-  final int perPage;
-
-  GetAnimeNewsEvent({this.perPage = 10});
-}
+class GetAnimeNewsEvent extends AnimeNewsEvent {}
 
 class GetMoreAnimeNewsEvent extends GetAnimeNewsEvent {}
