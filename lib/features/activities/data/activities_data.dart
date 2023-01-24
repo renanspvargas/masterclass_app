@@ -3,6 +3,15 @@ import 'package:masterclass_app/imports.dart';
 class ActivitiesData {
   static final List<ActivityModel> allActivities = [
     ActivityModel(
+      icon: AppSvgs.bloc,
+      title: _bloc.title,
+      body: "Making api calls using Bloc, Repository, Data Source",
+      exercicios: _bloc.activities.length,
+      sourceLink: "",
+      activitiesList: _bloc,
+    ),
+
+    ActivityModel(
       icon: AppSvgs.designPattern,
       title: _designPattern.title,
       body: "Service e Repository design patterns",
@@ -54,6 +63,7 @@ class ActivitiesData {
   ];
 
   //Atividades
+  static final _bloc = ActivitiesScreenData.bloc;
   static final _designPattern = ActivitiesScreenData.designPattern;
   static final _logic = ActivitiesScreenData.logic;
   static final _animation = ActivitiesScreenData.animations;

@@ -1,6 +1,16 @@
 import 'package:masterclass_app/imports.dart';
 
 class ActivitiesScreenData {
+  static final ActivitiesListScreenModel bloc = ActivitiesListScreenModel(
+    title: "Bloc Pattern",
+    activities: [
+      ActivityPageModel(
+        title: "Anime News",
+        navigator: AppRoutes.blocAnimeNews,
+      ),
+    ],
+  );
+
   static final ActivitiesListScreenModel designPattern =
       ActivitiesListScreenModel(
     title: "Design Pattern",
