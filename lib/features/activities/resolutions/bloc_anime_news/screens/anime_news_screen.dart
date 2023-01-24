@@ -14,10 +14,20 @@ class AnimeNewsScreen extends StatefulWidget {
 class _AnimeNewsScreenState extends State<AnimeNewsScreen> {
   final _bloc = AnimeNewsBloc();
 
+  final ScrollController _scrollController = ScrollController();
+
   @override
   void initState() {
-    _bloc.add(GetAnimeNewsEvent());
     super.initState();
+    _bloc.add(GetAnimeNewsEvent());
+    _scrollController.addListener(handleScrolling);
+  }
+
+  void handleScrolling() {
+    if (_scrollController.offset >=
+        _scrollController.position.maxScrollExtent) {
+      _bloc.add(GetMoreAnimeNewsEvent());
+    }
   }
 
   @override
@@ -55,6 +65,7 @@ class _AnimeNewsScreenState extends State<AnimeNewsScreen> {
 
           if (state is AnimeNewsLoadedState) {
             child = ListView.builder(
+              controller: _scrollController,
               itemCount: state.news.length,
               itemBuilder: (_, index) {
                 return Padding(
@@ -67,15 +78,15 @@ class _AnimeNewsScreenState extends State<AnimeNewsScreen> {
             );
           }
 
-          if (state is AnimeNewsLoadedMoreState) {
-            child = const Center(
-              child: Text('To be implmented'),
-            );
-          }
-
           return child;
         },
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    _scrollController.removeListener(handleScrolling);
+    super.dispose();
   }
 }
