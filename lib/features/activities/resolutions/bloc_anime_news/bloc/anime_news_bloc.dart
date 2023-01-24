@@ -26,6 +26,8 @@ class AnimeNewsBloc extends Bloc<AnimeNewsEvent, AnimeNewsState> {
       emit(AnimeNewsLoadedState(news));
     } on AnimeNewsOffilineException catch (e) {
       emit(AnimeNewsErrorState(e.message));
+    } on AnimeNewsBadRequestException catch (e) {
+      emit(AnimeNewsErrorState(e.message));
     }
   }
 
