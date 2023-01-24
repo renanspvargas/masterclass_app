@@ -57,8 +57,11 @@ class _AnimeNewsScreenState extends State<AnimeNewsScreen> {
             child = ListView.builder(
               itemCount: state.news.length,
               itemBuilder: (_, index) {
-                return ListTile(
-                  title: Text(state.news[index].title),
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListTile(
+                    title: Text(state.news[index].title),
+                  ),
                 );
               },
             );
