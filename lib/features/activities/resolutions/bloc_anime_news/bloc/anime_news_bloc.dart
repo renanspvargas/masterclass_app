@@ -6,7 +6,7 @@ import 'package:masterclass_app/features/activities/resolutions/bloc_anime_news/
 
 class AnimeNewsBloc extends Bloc<AnimeNewsEvent, AnimeNewsState> {
   final AnimeNewsRepository _repo;
-  int _currentPage = 0;
+  int _currentPage = 1;
 
   AnimeNewsBloc([repo])
       : _repo = repo ?? AnimeNewsRepository(),
