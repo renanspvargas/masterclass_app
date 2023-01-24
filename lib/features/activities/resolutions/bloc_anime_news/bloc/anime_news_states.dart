@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:masterclass_app/features/activities/resolutions/bloc_anime_news/models/anime_news_model.dart';
 
 abstract class AnimeNewsState {}
@@ -14,10 +15,6 @@ class AnimeNewsLoadedState extends AnimeNewsState {
   final List<AnimeNewsModel> news;
 
   AnimeNewsLoadedState(this.news);
-}
-
-class AnimeNewsLoadedMoreState extends AnimeNewsLoadedState {
-  AnimeNewsLoadedMoreState(super.news);
 }
 
 class AnimeNewsEmptyState extends AnimeNewsLoadedState {
