@@ -25,21 +25,25 @@ class _AnimeNewsScreenState extends State<AnimeNewsScreen> {
     return Scaffold(
       appBar: AppBar(),
       body: BlocBuilder<AnimeNewsBloc, AnimeNewsState>(
+        bloc: _bloc,
         builder: (context, state) {
           Widget child = Container();
 
           if (state is AnimeNewsErrorState) {
-            child = Row(
-              children: [
-                Text(state.message),
-                const SizedBox(height: 10),
-                ElevatedButton(
-                  onPressed: () {
-                    _bloc.add(GetAnimeNewsEvent());
-                  },
-                  child: const Text('tentar novamente'),
-                ),
-              ],
+            child = Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(state.message),
+                  const SizedBox(height: 10),
+                  ElevatedButton(
+                    onPressed: () {
+                      _bloc.add(GetAnimeNewsEvent());
+                    },
+                    child: const Text('tentar novamente'),
+                  ),
+                ],
+              ),
             );
           }
 
