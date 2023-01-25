@@ -19,8 +19,9 @@ Project created to practice concepts learned following the [Flutterando Online C
    - Prototype
    - Service
    - Repository
-   - Dependencu Injection
+   - Dependency Injection
  - Unity tests
+ - General State Management and Bloc
  - Error treatment
  - SOLID
 
@@ -60,10 +61,16 @@ The **Activities** resolution is separated by folders and they were made in the 
  - Animation: Learning about different types of animations
  - Logic: We started learning about Design Patterns and had to develop a validator respecting the layers
  - Design Pattern: Focus on network and data related (see Dartion section to know about the mock)
+ - Bloc Pattern: We learned about state management principles and applied the bloc pattern
 
 ## :nut_and_bolt: TODO
  - Change URLs referencing local servers acording to platform.
  - Study better ways to store the constant data on the app
+ - Manage errors (ex general api errors)
+ - Implement repositories page
+ - Create a more detailed profile
+ - Apply better practices across the entire app 
+ - Implement a webview to access links
 
 ## :zap: Dartion
 
