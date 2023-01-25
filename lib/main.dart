@@ -38,6 +38,7 @@ class _AppStartState extends State<AppStart> {
       themeMode: ThemeManager.shared.themeMode,
       onGenerateRoute: AppRouter.onGeneratedRoute,
       initialRoute: AppRoutes.splashScreen,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
