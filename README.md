@@ -67,6 +67,10 @@ The **Activities** resolution is separated by folders and they were made in the 
  - Change URLs referencing local servers acording to platform.
  - Study better ways to store the constant data on the app
  - Manage errors (ex general api errors)
+ - Implement repositories page
+ - Create a more detailed profile
+ - Apply better practices across the entire app 
+ - Implement a webview to access links
 
 ## :zap: Dartion
 
