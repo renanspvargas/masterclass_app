@@ -19,7 +19,7 @@ Project created to practice concepts learned following the [Flutterando Online C
    - Prototype
    - Service
    - Repository
-   - Dependencu Injection
+   - Dependency Injection
  - Unity tests
  - General State Management and Bloc
  - Error treatment
