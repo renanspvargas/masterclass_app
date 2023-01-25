@@ -44,24 +44,18 @@ class HeaderRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Stack(
-          alignment: Alignment.center,
-          children: [
-            Container(
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: primaryColor,
-              ),
-              height: 43,
-              width: 43,
-            ),
-            SvgPicture.asset(
-              activity.icon,
-              color: theme.scaffoldBackgroundColor,
-              height: 43,
-              width: 43,
-            ),
-          ],
+        Container(
+          clipBehavior: Clip.hardEdge,
+          decoration: const BoxDecoration(
+            shape: BoxShape.circle,
+            color: primaryColor,
+          ),
+          height: 43,
+          width: 43,
+          child: SvgPicture.asset(
+            activity.icon,
+            color: theme.scaffoldBackgroundColor,
+          ),
         ),
         const SizedBox(width: 12),
         Text(
