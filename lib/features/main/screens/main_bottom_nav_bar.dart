@@ -1,11 +1,8 @@
 import 'package:masterclass_app/imports.dart';
 
 class MainBottomNavBar extends StatefulWidget {
-  int currentPageIndex;
-
-  MainBottomNavBar({
+  const MainBottomNavBar({
     Key? key,
-    this.currentPageIndex = 0,
   }) : super(key: key);
 
   @override
@@ -13,6 +10,8 @@ class MainBottomNavBar extends StatefulWidget {
 }
 
 class _MainBottomNavBarState extends State<MainBottomNavBar> {
+  int _index = 0;
+
   final List<Widget> _screens = [
     HomeScreen(),
     const ReposScreen(),
@@ -22,13 +21,17 @@ class _MainBottomNavBarState extends State<MainBottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _screens.elementAt(widget.currentPageIndex),
+      body: IndexedStack(
+        index: _index,
+        children: _screens,
+      ),
+      // body: _screens.elementAt(widget.currentPageIndex),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        currentIndex: widget.currentPageIndex,
+        currentIndex: _index,
         onTap: (index) {
           setState(() {
-            widget.currentPageIndex = index;
+            _index = index;
           });
         },
         items: [

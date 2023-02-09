@@ -9,7 +9,8 @@ class AppRouter {
         return MaterialPageRoute(builder: ((context) => const SplashScreen()));
 
       case AppRoutes.mainBottomNavBar:
-        return MaterialPageRoute(builder: ((context) => MainBottomNavBar()));
+        return MaterialPageRoute(
+            builder: ((context) => const MainBottomNavBar()));
 
       case AppRoutes.mockupMoneyApp:
         return MaterialPageRoute(builder: ((context) => const MoneyApp()));
