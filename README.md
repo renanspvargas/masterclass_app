@@ -2,6 +2,8 @@
 
 Project created to practice concepts learned following the [Flutterando Online Course](https://masterclass.flutterando.com.br).
 
+https://user-images.githubusercontent.com/56892961/218480769-03e776d5-6d7c-48be-8ba5-ef6bacee00f6.mp4
+
 ### In the course we learned about:
  - Object Oriented Programming 
  - Flutter architecture and most common widgets
